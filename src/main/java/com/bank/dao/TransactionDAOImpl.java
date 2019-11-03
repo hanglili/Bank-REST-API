@@ -9,6 +9,7 @@ import com.bank.model.Transaction;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.atomic.AtomicLong;
 
 public class TransactionDAOImpl implements TransactionDAO {
 
@@ -16,6 +17,7 @@ public class TransactionDAOImpl implements TransactionDAO {
     private ConcurrentHashMap<Long, Transaction> transactionMap = new ConcurrentHashMap<>();
     private ConcurrentHashMap<Long, List<Transaction>> accountTransactionMap = new ConcurrentHashMap<>();
     private AccountDAOImpl accountService = AccountDAOImpl.getInstance();
+    private final AtomicLong count = new AtomicLong();
 
     private TransactionDAOImpl(){}
 
@@ -28,6 +30,11 @@ public class TransactionDAOImpl implements TransactionDAO {
             }
         }
         return instance;
+    }
+
+    @Override
+    public long getTransactionId() {
+        return count.incrementAndGet();
     }
 
     @Override

@@ -11,6 +11,8 @@ public interface TransactionDAO {
 
     Transaction get(long id) throws NoSuchTransactionException;
 
+    long getTransactionId();
+
     Transaction processTransaction(Transaction transaction)
             throws NoSuchAccountException, InsufficientBalanceException, TransactionOnSameAccountException;
 

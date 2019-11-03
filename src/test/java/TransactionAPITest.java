@@ -32,7 +32,6 @@ public class TransactionAPITest {
     private static AccountDAO accountDAO;
     private static String name1 = "Bob";
     private static String name2 = "Alice";
-    private static long transactionId = 1;
     private static Gson gson;
 
     @ClassRule
@@ -65,8 +64,7 @@ public class TransactionAPITest {
         accountDAO.addAccount(accountId2, name2, initialAmount2);
 
         HttpUriRequest request = new HttpPost(TRANSACTION_OPERATIONS_PATH + "create" +
-                "?id=" + transactionId++ +
-                "&from=" + accountId1.toString() +
+                "?from=" + accountId1.toString() +
                 "&to=" + accountId2.toString() +
                 "&amount=" + transferAmount.toString());
         HttpResponse response = HttpClientBuilder.create().build().execute(request);
@@ -90,8 +88,7 @@ public class TransactionAPITest {
         accountDAO.addAccount(accountId2, name2, initialAmount2);
 
         HttpUriRequest request = new HttpPost(TRANSACTION_OPERATIONS_PATH + "create" +
-                "?id=" + transactionId++ +
-                "&from=" + accountId1.toString() +
+                "?from=" + accountId1.toString() +
                 "&to=" + accountId2.toString() +
                 "&amount=" + transferAmount.toString());
         HttpResponse response = HttpClientBuilder.create().build().execute(request);
@@ -111,8 +108,7 @@ public class TransactionAPITest {
         accountDAO.addAccount(accountId2, name2, initialAmount2);
 
         HttpUriRequest request = new HttpPost(TRANSACTION_OPERATIONS_PATH + "create" +
-                "?id=" + transactionId++ +
-                "&from=" + accountId1.toString() +
+                "?from=" + accountId1.toString() +
                 "&to=" + accountId2.toString() +
                 "&amount=" + transferAmount.toString());
         HttpResponse response = HttpClientBuilder.create().build().execute(request);
@@ -130,8 +126,7 @@ public class TransactionAPITest {
         accountDAO.addAccount(accountId1, name1, initialAmount1);
 
         HttpUriRequest request = new HttpPost(TRANSACTION_OPERATIONS_PATH + "create" +
-                "?id=" + transactionId++ +
-                "&from=" + accountId1.toString() +
+                "?from=" + accountId1.toString() +
                 "&to=" + accountId2.toString() +
                 "&amount=" + transferAmount.toString());
         HttpResponse response = HttpClientBuilder.create().build().execute(request);
@@ -149,8 +144,7 @@ public class TransactionAPITest {
         accountDAO.addAccount(accountId1, name1, initialAmount1);
 
         HttpUriRequest request = new HttpPost(TRANSACTION_OPERATIONS_PATH + "create" +
-                "?id=" + transactionId++ +
-                "&from=" + accountId1.toString() +
+                "?from=" + accountId1.toString() +
                 "&to=" + accountId2.toString() +
                 "&amount=" + transferAmount.toString());
         HttpResponse response = HttpClientBuilder.create().build().execute(request);
@@ -170,20 +164,20 @@ public class TransactionAPITest {
         accountDAO.addAccount(accountId2, name2, initialAmount2);
 
         HttpUriRequest request = new HttpPost(TRANSACTION_OPERATIONS_PATH + "create" +
-                "?id=" + transactionId++ +
-                "&from=" + accountId1.toString() +
+                "?from=" + accountId1.toString() +
                 "&to=" + accountId2.toString() +
                 "&amount=" + transferAmount.toString());
         HttpResponse response = HttpClientBuilder.create().build().execute(request);
         Assert.assertEquals(HttpStatus.SC_OK,response.getStatusLine().getStatusCode());
+        Long transactionId = gson.fromJson(EntityUtils.toString(response.getEntity()), Long.class);
 
-        HttpUriRequest getRequest = new HttpGet(TRANSACTION_OPERATIONS_PATH + (transactionId - 1));
+        HttpUriRequest getRequest = new HttpGet(TRANSACTION_OPERATIONS_PATH + transactionId);
         HttpResponse getResponse = HttpClientBuilder.create().build().execute(getRequest);
 
         Assert.assertEquals(HttpStatus.SC_OK, getResponse.getStatusLine().getStatusCode());
 
         Transaction transaction = gson.fromJson(EntityUtils.toString(getResponse.getEntity()), Transaction.class);
-        Assert.assertEquals((transactionId - 1), transaction.getId());
+        Assert.assertEquals(transactionId.longValue(), transaction.getId());
         Assert.assertEquals(accountId1.longValue(), transaction.getSourceAccountId());
         Assert.assertEquals(accountId2.longValue(), transaction.getDestinationAccountId());
         Assert.assertEquals(transferAmount, transaction.getAmount(), 0);
@@ -212,12 +206,12 @@ public class TransactionAPITest {
         accountDAO.addAccount(accountId2, name2, initialAmount2);
 
         HttpUriRequest request = new HttpPost(TRANSACTION_OPERATIONS_PATH + "create" +
-                "?id=" + 100 +
-                "&from=" + accountId1.toString() +
+                "?from=" + accountId1.toString() +
                 "&to=" + accountId2.toString() +
                 "&amount=" + transferAmount.toString());
         HttpResponse response = HttpClientBuilder.create().build().execute(request);
         Assert.assertEquals(HttpStatus.SC_OK,response.getStatusLine().getStatusCode());
+        Long transactionId = gson.fromJson(EntityUtils.toString(response.getEntity()), Long.class);
 
         HttpUriRequest getRequest = new HttpGet(TRANSACTION_OPERATIONS_PATH + "account"
             + "?id=" + 400);
@@ -230,7 +224,7 @@ public class TransactionAPITest {
                 new TypeToken<List<Transaction>>(){}.getType());
         Assert.assertEquals(1, transactions.size());
         Transaction transaction = transactions.get(0);
-        Assert.assertEquals(100, transaction.getId());
+        Assert.assertEquals(transactionId.longValue(), transaction.getId());
         Assert.assertEquals(accountId1.longValue(), transaction.getSourceAccountId());
         Assert.assertEquals(accountId2.longValue(), transaction.getDestinationAccountId());
         Assert.assertEquals(transferAmount, transaction.getAmount(), 0);

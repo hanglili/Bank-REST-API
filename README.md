@@ -23,9 +23,9 @@ The jar will be generated at the path `target/Bank-REST-API-1.0-SNAPSHOT.jar`.
    
    The Application starts a server on localhost port 8080.
  
-##### Request: http://localhost:8080/api/accounts/create?id=1&name=Hang&balance=100
+##### POST Request: http://localhost:8080/api/accounts/create?id=1&name=Hang&balance=100
 ##### Response: 200 Status.OK
-##### Request: http://localhost:8080/api/accounts/1
+##### GET Request: http://localhost:8080/api/accounts/1
 ##### Response:
 ```sh
 {
@@ -35,10 +35,24 @@ The jar will be generated at the path `target/Bank-REST-API-1.0-SNAPSHOT.jar`.
     "lock": {}
 }
 ```
-##### Request: http://localhost:8080/api/transactions/create?id=2&from=1&to=2&amount=100
-##### Response: 200 Status.OK
+##### POST Request: http://localhost:8080/api/transactions/create?from=1&to=2&amount=100
+##### Response: (transactionId)
+```sh
+1
+```
 
-##### Request: http://localhost:8080/api/transactions/account/?id=1
+##### GET Request: http://localhost:8080/api/transactions/1
+##### Response:
+```sh
+{
+    "id": 1,
+    "sourceAccountId": 2,
+    "destinationAccountId": 1,
+    "amount": 50.0
+}
+```
+
+##### GET Request: http://localhost:8080/api/transactions/account/?id=1
 ##### Response:
 ```sh
 [
@@ -57,7 +71,7 @@ The jar will be generated at the path `target/Bank-REST-API-1.0-SNAPSHOT.jar`.
 | -----------| ------ | ------ |
 | POST | /api/accounts/create?id={id}&name={name}&balance={balance} | create a new account
 | GET | /api/accounts/{accountId} | get account by accountId | 
-| POST | /api/transactions/create?id={transactionId}&from={senderAccountId}&to={recipientAccountId}&amount={amount} | perform transaction between 2 accounts | 
+| POST | /api/transactions/create?from={senderAccountId}&to={recipientAccountId}&amount={amount} | perform transaction between 2 accounts | 
 | GET | /api/transactions/{transactionId} | get transaction by id | 
 | GET | /api/transactions/account/?id={accountId} | get all the transactions of an account | 
  

@@ -36,17 +36,18 @@ public class TransactionAPI {
     @POST
     @Timed
     @Path("/transactions/create")
-    public Response transfer(@QueryParam("id") String id, @QueryParam("from") String senderId,
+    public Response transfer(@QueryParam("from") String senderId,
             @QueryParam("to") String recipientId, @QueryParam("amount") String amount)  {
         try {
             logger.info("Request to transfer " + amount + " from accountId: " + senderId +
                     " to accountId: " + recipientId);
+            long transactionId = transactionDAO.getTransactionId();
             transactionDAO.processTransaction(new Transaction(
-                    ParamValidation.validateId(id),
+                    transactionId,
                     ParamValidation.validateId(senderId),
                     ParamValidation.validateId(recipientId),
                     ParamValidation.validateAmount(amount)));
-            return Response.ok().build();
+            return Response.ok().entity(transactionId).build();
         } catch (Exception e) {
             return Response.status(Status.BAD_REQUEST).entity(e.getMessage()).build();
         }
