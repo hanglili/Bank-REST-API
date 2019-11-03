@@ -720,3 +720,56 @@ level="INFO" timestamp="2019-11-03 22:14:29,162Z" category="com.bank.api.Account
 level="INFO" timestamp="2019-11-03 22:14:33,270Z" category="com.bank.api.AccountAPI" Request to get the account with id: 1
 level="INFO" timestamp="2019-11-03 22:14:45,421Z" category="com.bank.api.AccountAPI" Request to get the account with id: 1
 level="INFO" timestamp="2019-11-03 22:15:21,284Z" category="com.bank.api.TransactionAPI" Request to get all the transactions related to an account with id: 1
+level="INFO" timestamp="2019-11-03 22:21:15,983Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped application@ff23ae7{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2019-11-03 22:21:15,984Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped admin@423b2b62{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2019-11-03 22:21:15,986Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@2921a36a{/,null,UNAVAILABLE}
+level="INFO" timestamp="2019-11-03 22:21:15,990Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@32091c14{/,null,UNAVAILABLE}
+level="INFO" timestamp="2019-11-03 22:32:50,539Z" category="org.eclipse.jetty.util.log" Logging initialized @2282ms to org.eclipse.jetty.util.log.Slf4jLog
+level="INFO" timestamp="2019-11-03 22:32:50,677Z" category="io.dropwizard.server.DefaultServerFactory" Registering jersey handler with root path prefix: /
+level="INFO" timestamp="2019-11-03 22:32:50,680Z" category="io.dropwizard.server.DefaultServerFactory" Registering admin handler with root path prefix: /
+level="INFO" timestamp="2019-11-03 22:32:50,680Z" category="com.bank.ServiceApplication" Registering REST resources
+level="INFO" timestamp="2019-11-03 22:32:50,751Z" category="io.dropwizard.server.ServerFactory" Starting ServiceApplication
+level="INFO" timestamp="2019-11-03 22:32:50,926Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened application@ff23ae7{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2019-11-03 22:32:50,927Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened admin@423b2b62{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2019-11-03 22:32:50,929Z" category="org.eclipse.jetty.server.Server" jetty-9.4.z-SNAPSHOT
+level="INFO" timestamp="2019-11-03 22:32:51,708Z" category="io.dropwizard.jersey.DropwizardResourceConfig" The following paths were found for the configured resources:
+
+    POST    /api/accounts/create (com.bank.api.AccountAPI)
+    GET     /api/accounts/{id} (com.bank.api.AccountAPI)
+    GET     /api/ping (com.bank.api.AccountAPI)
+    GET     /api/transactions/account (com.bank.api.TransactionAPI)
+    POST    /api/transactions/create (com.bank.api.TransactionAPI)
+    GET     /api/transactions/{id} (com.bank.api.TransactionAPI)
+
+level="INFO" timestamp="2019-11-03 22:32:51,711Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@32091c14{/,null,AVAILABLE}
+level="INFO" timestamp="2019-11-03 22:32:51,716Z" category="io.dropwizard.setup.AdminEnvironment" tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+level="WARN" timestamp="2019-11-03 22:32:51,718Z" category="io.dropwizard.setup.AdminEnvironment" 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+level="INFO" timestamp="2019-11-03 22:32:51,727Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@2921a36a{/,null,AVAILABLE}
+level="INFO" timestamp="2019-11-03 22:32:51,752Z" category="org.eclipse.jetty.server.AbstractConnector" Started application@ff23ae7{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2019-11-03 22:32:51,759Z" category="org.eclipse.jetty.server.AbstractConnector" Started admin@423b2b62{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2019-11-03 22:32:51,761Z" category="org.eclipse.jetty.server.Server" Started @3507ms
+level="INFO" timestamp="2019-11-03 22:33:04,337Z" category="com.bank.api.AccountAPI" Request to add a new account with id: 1, name: Hang, balance: 100
+level="INFO" timestamp="2019-11-03 22:33:06,638Z" category="com.bank.api.AccountAPI" Request to add a new account with id: 2, name: Benito, balance: 50
+level="INFO" timestamp="2019-11-03 22:33:13,835Z" category="com.bank.api.AccountAPI" Request to add a new account with id: 1, name: Hang, balance: 100
+level="INFO" timestamp="2019-11-03 22:33:22,504Z" category="com.bank.api.TransactionAPI" Request to transfer 100 from accountId: 1 to accountId: 2
+level="INFO" timestamp="2019-11-03 22:33:27,322Z" category="com.bank.api.TransactionAPI" Request to get all the transactions related to an account with id: 1
+level="INFO" timestamp="2019-11-03 22:34:09,684Z" category="com.bank.api.AccountAPI" Request to get the account with id: 1
+level="INFO" timestamp="2019-11-03 22:34:25,992Z" category="com.bank.api.TransactionAPI" Request to transfer 50 from accountId: 2 to accountId: 1
+level="INFO" timestamp="2019-11-03 22:34:28,673Z" category="com.bank.api.TransactionAPI" Request to get all the transactions related to an account with id: 1
+level="INFO" timestamp="2019-11-03 22:34:37,006Z" category="com.bank.api.AccountAPI" Request to get the account with id: 1
+level="INFO" timestamp="2019-11-03 22:37:53,782Z" category="com.bank.api.TransactionAPI" Request to get transaction with id: 1
+level="INFO" timestamp="2019-11-03 22:38:24,168Z" category="com.bank.api.TransactionAPI" Request to get transaction with id: 2
+level="INFO" timestamp="2019-11-03 22:38:31,316Z" category="com.bank.api.TransactionAPI" Request to get all the transactions related to an account with id: 1
+level="INFO" timestamp="2019-11-03 22:38:36,135Z" category="com.bank.api.AccountAPI" Request to get the account with id: 1
