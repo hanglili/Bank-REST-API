@@ -32,7 +32,7 @@ The jar will be generated at the path `target/Bank-REST-API-1.0-SNAPSHOT.jar`.
 | GET | /api/accounts/{accountId} | get account by accountId | 
 | POST | /api/transactions/create?from={senderAccountId}&to={recipientAccountId}&amount={amount} | perform transaction between 2 accounts | 
 | GET | /api/transactions/{transactionId} | get transaction by id | 
-| GET | /api/transactions/account/?id={accountId} | get all the transactions of an account | 
+| GET | /api/transactions/account?id={accountId} | get all the transactions of an account | 
  
 ### Http Status
 - 200 OK
