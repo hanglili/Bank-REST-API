@@ -22,6 +22,22 @@ The jar will be generated at the path `target/Bank-REST-API-1.0-SNAPSHOT.jar`.
 ### Server
    
    The Application starts a server on localhost port 8080.
+   
+
+### Available Services
+
+| HTTP METHOD | PATH | USAGE |
+| -----------| ------ | ------ |
+| POST | /api/accounts/create?id={id}&name={name}&balance={balance} | create a new account
+| GET | /api/accounts/{accountId} | get account by accountId | 
+| POST | /api/transactions/create?from={senderAccountId}&to={recipientAccountId}&amount={amount} | perform transaction between 2 accounts | 
+| GET | /api/transactions/{transactionId} | get transaction by id | 
+| GET | /api/transactions/account/?id={accountId} | get all the transactions of an account | 
+ 
+### Http Status
+- 200 OK
+- 400 Bad Request 
+- 404 Not Found
  
 ##### POST Request: http://localhost:8080/api/accounts/create?id=1&name=Hang&balance=100
 ##### Response: 200 Status.OK
@@ -64,21 +80,6 @@ The jar will be generated at the path `target/Bank-REST-API-1.0-SNAPSHOT.jar`.
     }
 ]
 ```
-
-### Available Services
-
-| HTTP METHOD | PATH | USAGE |
-| -----------| ------ | ------ |
-| POST | /api/accounts/create?id={id}&name={name}&balance={balance} | create a new account
-| GET | /api/accounts/{accountId} | get account by accountId | 
-| POST | /api/transactions/create?from={senderAccountId}&to={recipientAccountId}&amount={amount} | perform transaction between 2 accounts | 
-| GET | /api/transactions/{transactionId} | get transaction by id | 
-| GET | /api/transactions/account/?id={accountId} | get all the transactions of an account | 
- 
-### Http Status
-- 200 OK
-- 400 Bad Request 
-- 404 Not Found
 
 
 
