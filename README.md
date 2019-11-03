@@ -68,7 +68,7 @@ The jar will be generated at the path `target/Bank-REST-API-1.0-SNAPSHOT.jar`.
 }
 ```
 
-##### GET Request: http://localhost:8080/api/transactions/account/?id=1
+##### GET Request: http://localhost:8080/api/transactions/account?id=1
 ##### Response:
 ```sh
 [

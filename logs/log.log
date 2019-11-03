@@ -3472,3 +3472,6 @@ level="INFO" timestamp="2019-11-03 23:17:22,700Z" category="com.bank.api.Transac
 level="INFO" timestamp="2019-11-03 23:17:30,889Z" category="com.bank.api.TransactionAPI" Request to transfer 50 from accountId: 1 to accountId: 1
 level="INFO" timestamp="2019-11-03 23:18:01,407Z" category="com.bank.api.TransactionAPI" Request to transfer 50 from accountId: 2 to accountId: 1
 level="INFO" timestamp="2019-11-03 23:18:10,479Z" category="com.bank.api.TransactionAPI" Request to transfer 50 from accountId: 1 to accountId: 1
+level="INFO" timestamp="2019-11-03 23:22:18,798Z" category="com.bank.api.TransactionAPI" Request to get all the transactions related to an account with id: 2
+level="INFO" timestamp="2019-11-03 23:22:25,263Z" category="com.bank.api.TransactionAPI" Request to get all the transactions related to an account with id: 2
+level="INFO" timestamp="2019-11-03 23:22:29,185Z" category="com.bank.api.TransactionAPI" Request to get all the transactions related to an account with id: 1
