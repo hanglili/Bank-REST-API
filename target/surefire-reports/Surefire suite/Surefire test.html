@@ -1,0 +1,249 @@
+<html>
+<head>
+<title>TestNG:  Surefire test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>34/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Nov 03 22:12:54 GMT 2019</td>
+</tr>
+<tr><td>Total time:</td><td>7 seconds (7572 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='ServiceApplicationTest.appStartsUp()'><b>appStartsUp</b><br>Test class: ServiceApplicationTest</td>
+<td></td>
+<td>5</td>
+<td>appStartsUp(ServiceApplicationTest)</td></tr>
+<tr>
+<td title='AccountAPITest.testCreateAccount()'><b>testCreateAccount</b><br>Test class: AccountAPITest</td>
+<td></td>
+<td>0</td>
+<td>testCreateAccount(AccountAPITest)</td></tr>
+<tr>
+<td title='AccountAPITest.testCreateAccount_DuplicateAccountId()'><b>testCreateAccount_DuplicateAccountId</b><br>Test class: AccountAPITest</td>
+<td></td>
+<td>0</td>
+<td>testCreateAccount_DuplicateAccountId(AccountAPITest)</td></tr>
+<tr>
+<td title='AccountDAOTest.testCreateAccount_DuplicateAccountIdException()'><b>testCreateAccount_DuplicateAccountIdException</b><br>Test class: AccountDAOTest</td>
+<td></td>
+<td>0</td>
+<td>testCreateAccount_DuplicateAccountIdException(AccountDAOTest)</td></tr>
+<tr>
+<td title='AccountAPITest.testCreateAccount_InvalidID()'><b>testCreateAccount_InvalidID</b><br>Test class: AccountAPITest</td>
+<td></td>
+<td>0</td>
+<td>testCreateAccount_InvalidID(AccountAPITest)</td></tr>
+<tr>
+<td title='AccountAPITest.testCreateAccount_InvalidID_2()'><b>testCreateAccount_InvalidID_2</b><br>Test class: AccountAPITest</td>
+<td></td>
+<td>0</td>
+<td>testCreateAccount_InvalidID_2(AccountAPITest)</td></tr>
+<tr>
+<td title='AccountAPITest.testCreateAccount_NegativeInitialAmount()'><b>testCreateAccount_NegativeInitialAmount</b><br>Test class: AccountAPITest</td>
+<td></td>
+<td>0</td>
+<td>testCreateAccount_NegativeInitialAmount(AccountAPITest)</td></tr>
+<tr>
+<td title='AccountDAOTest.testCreateAndGetAccount()'><b>testCreateAndGetAccount</b><br>Test class: AccountDAOTest</td>
+<td></td>
+<td>0</td>
+<td>testCreateAndGetAccount(AccountDAOTest)</td></tr>
+<tr>
+<td title='AccountDAOTest.testDeposit()'><b>testDeposit</b><br>Test class: AccountDAOTest</td>
+<td></td>
+<td>0</td>
+<td>testDeposit(AccountDAOTest)</td></tr>
+<tr>
+<td title='AccountDAOTest.testDeposit_NoSuchAccountException()'><b>testDeposit_NoSuchAccountException</b><br>Test class: AccountDAOTest</td>
+<td></td>
+<td>0</td>
+<td>testDeposit_NoSuchAccountException(AccountDAOTest)</td></tr>
+<tr>
+<td title='AccountAPITest.testGetAccount()'><b>testGetAccount</b><br>Test class: AccountAPITest</td>
+<td></td>
+<td>0</td>
+<td>testGetAccount(AccountAPITest)</td></tr>
+<tr>
+<td title='AccountAPITest.testGetAccount_NoSuchAccount()'><b>testGetAccount_NoSuchAccount</b><br>Test class: AccountAPITest</td>
+<td></td>
+<td>0</td>
+<td>testGetAccount_NoSuchAccount(AccountAPITest)</td></tr>
+<tr>
+<td title='AccountDAOTest.testGetAccount_NoSuchAccountException()'><b>testGetAccount_NoSuchAccountException</b><br>Test class: AccountDAOTest</td>
+<td></td>
+<td>0</td>
+<td>testGetAccount_NoSuchAccountException(AccountDAOTest)</td></tr>
+<tr>
+<td title='AccountDAOTest.testGetCurrentBalance()'><b>testGetCurrentBalance</b><br>Test class: AccountDAOTest</td>
+<td></td>
+<td>0</td>
+<td>testGetCurrentBalance(AccountDAOTest)</td></tr>
+<tr>
+<td title='AccountDAOTest.testGetCurrentBalance_NoSuchAccountException()'><b>testGetCurrentBalance_NoSuchAccountException</b><br>Test class: AccountDAOTest</td>
+<td></td>
+<td>0</td>
+<td>testGetCurrentBalance_NoSuchAccountException(AccountDAOTest)</td></tr>
+<tr>
+<td title='TransactionDAOTest.testGetTransaction()'><b>testGetTransaction</b><br>Test class: TransactionDAOTest</td>
+<td></td>
+<td>0</td>
+<td>testGetTransaction(TransactionDAOTest)</td></tr>
+<tr>
+<td title='TransactionAPITest.testGetTransaction()'><b>testGetTransaction</b><br>Test class: TransactionAPITest</td>
+<td></td>
+<td>1</td>
+<td>testGetTransaction(TransactionAPITest)</td></tr>
+<tr>
+<td title='TransactionAPITest.testGetTransactionForOneAccount()'><b>testGetTransactionForOneAccount</b><br>Test class: TransactionAPITest</td>
+<td></td>
+<td>1</td>
+<td>testGetTransactionForOneAccount(TransactionAPITest)</td></tr>
+<tr>
+<td title='TransactionAPITest.testGetTransaction_NoSuchTransaction()'><b>testGetTransaction_NoSuchTransaction</b><br>Test class: TransactionAPITest</td>
+<td></td>
+<td>0</td>
+<td>testGetTransaction_NoSuchTransaction(TransactionAPITest)</td></tr>
+<tr>
+<td title='TransactionDAOTest.testGetTransaction_NoSuchTransactionException()'><b>testGetTransaction_NoSuchTransactionException</b><br>Test class: TransactionDAOTest</td>
+<td></td>
+<td>0</td>
+<td>testGetTransaction_NoSuchTransactionException(TransactionDAOTest)</td></tr>
+<tr>
+<td title='TransactionDAOTest.testGetTransactionsForOneAccount()'><b>testGetTransactionsForOneAccount</b><br>Test class: TransactionDAOTest</td>
+<td></td>
+<td>0</td>
+<td>testGetTransactionsForOneAccount(TransactionDAOTest)</td></tr>
+<tr>
+<td title='TransactionDAOTest.testGetTransactionsForOneAccount_NoSuchAccountException()'><b>testGetTransactionsForOneAccount_NoSuchAccountException</b><br>Test class: TransactionDAOTest</td>
+<td></td>
+<td>0</td>
+<td>testGetTransactionsForOneAccount_NoSuchAccountException(TransactionDAOTest)</td></tr>
+<tr>
+<td title='TransactionDAOTest.testProcessTransaction()'><b>testProcessTransaction</b><br>Test class: TransactionDAOTest</td>
+<td></td>
+<td>0</td>
+<td>testProcessTransaction(TransactionDAOTest)</td></tr>
+<tr>
+<td title='TransactionDAOTest.testProcessTransaction_InsufficientBalanceException()'><b>testProcessTransaction_InsufficientBalanceException</b><br>Test class: TransactionDAOTest</td>
+<td></td>
+<td>0</td>
+<td>testProcessTransaction_InsufficientBalanceException(TransactionDAOTest)</td></tr>
+<tr>
+<td title='TransactionDAOTest.testProcessTransaction_NoSuchAccountException_1()'><b>testProcessTransaction_NoSuchAccountException_1</b><br>Test class: TransactionDAOTest</td>
+<td></td>
+<td>0</td>
+<td>testProcessTransaction_NoSuchAccountException_1(TransactionDAOTest)</td></tr>
+<tr>
+<td title='TransactionDAOTest.testProcessTransaction_NoSuchAccountException_2()'><b>testProcessTransaction_NoSuchAccountException_2</b><br>Test class: TransactionDAOTest</td>
+<td></td>
+<td>0</td>
+<td>testProcessTransaction_NoSuchAccountException_2(TransactionDAOTest)</td></tr>
+<tr>
+<td title='TransactionAPITest.testTransaction()'><b>testTransaction</b><br>Test class: TransactionAPITest</td>
+<td></td>
+<td>1</td>
+<td>testTransaction(TransactionAPITest)</td></tr>
+<tr>
+<td title='TransactionAPITest.testTransaction_InsufficientBalance()'><b>testTransaction_InsufficientBalance</b><br>Test class: TransactionAPITest</td>
+<td></td>
+<td>0</td>
+<td>testTransaction_InsufficientBalance(TransactionAPITest)</td></tr>
+<tr>
+<td title='TransactionAPITest.testTransaction_InvalidID()'><b>testTransaction_InvalidID</b><br>Test class: TransactionAPITest</td>
+<td></td>
+<td>0</td>
+<td>testTransaction_InvalidID(TransactionAPITest)</td></tr>
+<tr>
+<td title='TransactionAPITest.testTransaction_InvalidTransferAmount()'><b>testTransaction_InvalidTransferAmount</b><br>Test class: TransactionAPITest</td>
+<td></td>
+<td>1</td>
+<td>testTransaction_InvalidTransferAmount(TransactionAPITest)</td></tr>
+<tr>
+<td title='TransactionAPITest.testTransaction_NoSuchAccount()'><b>testTransaction_NoSuchAccount</b><br>Test class: TransactionAPITest</td>
+<td></td>
+<td>0</td>
+<td>testTransaction_NoSuchAccount(TransactionAPITest)</td></tr>
+<tr>
+<td title='AccountDAOTest.testWithdraw()'><b>testWithdraw</b><br>Test class: AccountDAOTest</td>
+<td></td>
+<td>0</td>
+<td>testWithdraw(AccountDAOTest)</td></tr>
+<tr>
+<td title='AccountDAOTest.testWithdraw_InsufficientBalanceException()'><b>testWithdraw_InsufficientBalanceException</b><br>Test class: AccountDAOTest</td>
+<td></td>
+<td>0</td>
+<td>testWithdraw_InsufficientBalanceException(AccountDAOTest)</td></tr>
+<tr>
+<td title='AccountDAOTest.testWithdraw_NoSuchAccountException()'><b>testWithdraw_NoSuchAccountException</b><br>Test class: AccountDAOTest</td>
+<td></td>
+<td>0</td>
+<td>testWithdraw_NoSuchAccountException(AccountDAOTest)</td></tr>
+</table><p>
+</body>
+</html>

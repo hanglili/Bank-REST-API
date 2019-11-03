@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="34" passed="34">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="7572" started-at="2019-11-03T22:12:54 GMT" finished-at="2019-11-03T22:13:02 GMT">
+    <groups>
+    </groups>
+    <test name="Surefire test" duration-ms="7572" started-at="2019-11-03T22:12:54 GMT" finished-at="2019-11-03T22:13:02 GMT">
+      <class name="ServiceApplicationTest">
+        <test-method status="PASS" signature="appStartsUp()" name="appStartsUp" duration-ms="5134" started-at="2019-11-03T22:12:54 GMT" finished-at="2019-11-03T22:13:00 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appStartsUp -->
+      </class> <!-- ServiceApplicationTest -->
+      <class name="AccountAPITest">
+        <test-method status="PASS" signature="testGetAccount_NoSuchAccount() throws java.io.IOException" name="testGetAccount_NoSuchAccount" duration-ms="933" started-at="2019-11-03T22:13:00 GMT" finished-at="2019-11-03T22:13:01 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetAccount_NoSuchAccount -->
+        <test-method status="PASS" signature="testCreateAccount_InvalidID() throws java.io.IOException" name="testCreateAccount_InvalidID" duration-ms="866" started-at="2019-11-03T22:13:00 GMT" finished-at="2019-11-03T22:13:00 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateAccount_InvalidID -->
+        <test-method status="PASS" signature="testCreateAccount_InvalidID_2() throws java.io.IOException" name="testCreateAccount_InvalidID_2" duration-ms="876" started-at="2019-11-03T22:13:00 GMT" finished-at="2019-11-03T22:13:00 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateAccount_InvalidID_2 -->
+        <test-method status="PASS" signature="testGetAccount() throws java.io.IOException" name="testGetAccount" duration-ms="854" started-at="2019-11-03T22:13:00 GMT" finished-at="2019-11-03T22:13:00 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetAccount -->
+        <test-method status="PASS" signature="testCreateAccount() throws java.io.IOException" name="testCreateAccount" duration-ms="793" started-at="2019-11-03T22:13:00 GMT" finished-at="2019-11-03T22:13:00 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateAccount -->
+        <test-method status="PASS" signature="testCreateAccount_DuplicateAccountId() throws java.io.IOException" name="testCreateAccount_DuplicateAccountId" duration-ms="972" started-at="2019-11-03T22:13:00 GMT" finished-at="2019-11-03T22:13:01 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateAccount_DuplicateAccountId -->
+        <test-method status="PASS" signature="testCreateAccount_NegativeInitialAmount() throws java.io.IOException" name="testCreateAccount_NegativeInitialAmount" duration-ms="896" started-at="2019-11-03T22:13:00 GMT" finished-at="2019-11-03T22:13:01 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateAccount_NegativeInitialAmount -->
+      </class> <!-- AccountAPITest -->
+      <class name="TransactionAPITest">
+        <test-method status="PASS" signature="testGetTransaction() throws java.io.IOException,com.bank.exceptions.DuplicateAccountIdException" name="testGetTransaction" duration-ms="1091" started-at="2019-11-03T22:13:01 GMT" finished-at="2019-11-03T22:13:02 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetTransaction -->
+        <test-method status="PASS" signature="testTransaction_NoSuchAccount() throws com.bank.exceptions.DuplicateAccountIdException,java.io.IOException" name="testTransaction_NoSuchAccount" duration-ms="946" started-at="2019-11-03T22:13:01 GMT" finished-at="2019-11-03T22:13:02 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTransaction_NoSuchAccount -->
+        <test-method status="PASS" signature="testTransaction() throws java.io.IOException,com.bank.exceptions.DuplicateAccountIdException,com.bank.exceptions.NoSuchAccountException" name="testTransaction" duration-ms="1146" started-at="2019-11-03T22:13:01 GMT" finished-at="2019-11-03T22:13:02 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTransaction -->
+        <test-method status="PASS" signature="testGetTransactionForOneAccount() throws java.io.IOException,com.bank.exceptions.DuplicateAccountIdException" name="testGetTransactionForOneAccount" duration-ms="1130" started-at="2019-11-03T22:13:01 GMT" finished-at="2019-11-03T22:13:02 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetTransactionForOneAccount -->
+        <test-method status="PASS" signature="testGetTransaction_NoSuchTransaction() throws java.io.IOException" name="testGetTransaction_NoSuchTransaction" duration-ms="959" started-at="2019-11-03T22:13:01 GMT" finished-at="2019-11-03T22:13:02 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetTransaction_NoSuchTransaction -->
+        <test-method status="PASS" signature="testTransaction_InvalidID() throws com.bank.exceptions.DuplicateAccountIdException,java.io.IOException" name="testTransaction_InvalidID" duration-ms="981" started-at="2019-11-03T22:13:01 GMT" finished-at="2019-11-03T22:13:02 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTransaction_InvalidID -->
+        <test-method status="PASS" signature="testTransaction_InsufficientBalance() throws com.bank.exceptions.DuplicateAccountIdException,java.io.IOException" name="testTransaction_InsufficientBalance" duration-ms="926" started-at="2019-11-03T22:13:01 GMT" finished-at="2019-11-03T22:13:02 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTransaction_InsufficientBalance -->
+        <test-method status="PASS" signature="testTransaction_InvalidTransferAmount() throws com.bank.exceptions.DuplicateAccountIdException,java.io.IOException" name="testTransaction_InvalidTransferAmount" duration-ms="1007" started-at="2019-11-03T22:13:01 GMT" finished-at="2019-11-03T22:13:02 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTransaction_InvalidTransferAmount -->
+      </class> <!-- TransactionAPITest -->
+      <class name="AccountDAOTest">
+        <test-method status="PASS" signature="testWithdraw() throws com.bank.exceptions.DuplicateAccountIdException,com.bank.exceptions.InsufficientBalanceException,com.bank.exceptions.NoSuchAccountException" name="testWithdraw" duration-ms="21" started-at="2019-11-03T22:13:01 GMT" finished-at="2019-11-03T22:13:01 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWithdraw -->
+        <test-method status="PASS" signature="testDeposit_NoSuchAccountException()" name="testDeposit_NoSuchAccountException" duration-ms="20" started-at="2019-11-03T22:13:01 GMT" finished-at="2019-11-03T22:13:01 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeposit_NoSuchAccountException -->
+        <test-method status="PASS" signature="testGetCurrentBalance() throws com.bank.exceptions.DuplicateAccountIdException,com.bank.exceptions.NoSuchAccountException" name="testGetCurrentBalance" duration-ms="22" started-at="2019-11-03T22:13:01 GMT" finished-at="2019-11-03T22:13:01 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetCurrentBalance -->
+        <test-method status="PASS" signature="testWithdraw_InsufficientBalanceException() throws com.bank.exceptions.DuplicateAccountIdException" name="testWithdraw_InsufficientBalanceException" duration-ms="42" started-at="2019-11-03T22:13:01 GMT" finished-at="2019-11-03T22:13:01 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWithdraw_InsufficientBalanceException -->
+        <test-method status="PASS" signature="testDeposit() throws com.bank.exceptions.DuplicateAccountIdException,com.bank.exceptions.NoSuchAccountException" name="testDeposit" duration-ms="41" started-at="2019-11-03T22:13:01 GMT" finished-at="2019-11-03T22:13:01 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeposit -->
+        <test-method status="PASS" signature="testCreateAndGetAccount() throws com.bank.exceptions.DuplicateAccountIdException,com.bank.exceptions.NoSuchAccountException" name="testCreateAndGetAccount" duration-ms="41" started-at="2019-11-03T22:13:01 GMT" finished-at="2019-11-03T22:13:01 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateAndGetAccount -->
+        <test-method status="PASS" signature="testGetAccount_NoSuchAccountException()" name="testGetAccount_NoSuchAccountException" duration-ms="47" started-at="2019-11-03T22:13:01 GMT" finished-at="2019-11-03T22:13:01 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetAccount_NoSuchAccountException -->
+        <test-method status="PASS" signature="testGetCurrentBalance_NoSuchAccountException()" name="testGetCurrentBalance_NoSuchAccountException" duration-ms="54" started-at="2019-11-03T22:13:01 GMT" finished-at="2019-11-03T22:13:01 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetCurrentBalance_NoSuchAccountException -->
+        <test-method status="PASS" signature="testWithdraw_NoSuchAccountException()" name="testWithdraw_NoSuchAccountException" duration-ms="29" started-at="2019-11-03T22:13:01 GMT" finished-at="2019-11-03T22:13:01 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWithdraw_NoSuchAccountException -->
+        <test-method status="PASS" signature="testCreateAccount_DuplicateAccountIdException() throws com.bank.exceptions.DuplicateAccountIdException" name="testCreateAccount_DuplicateAccountIdException" duration-ms="40" started-at="2019-11-03T22:13:01 GMT" finished-at="2019-11-03T22:13:01 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateAccount_DuplicateAccountIdException -->
+      </class> <!-- AccountDAOTest -->
+      <class name="TransactionDAOTest">
+        <test-method status="PASS" signature="testProcessTransaction_NoSuchAccountException_1() throws com.bank.exceptions.DuplicateAccountIdException" name="testProcessTransaction_NoSuchAccountException_1" duration-ms="23" started-at="2019-11-03T22:13:01 GMT" finished-at="2019-11-03T22:13:01 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testProcessTransaction_NoSuchAccountException_1 -->
+        <test-method status="PASS" signature="testProcessTransaction() throws com.bank.exceptions.InsufficientBalanceException,com.bank.exceptions.NoSuchAccountException,com.bank.exceptions.DuplicateAccountIdException,com.bank.exceptions.TransactionOnSameAccountException" name="testProcessTransaction" duration-ms="13" started-at="2019-11-03T22:13:01 GMT" finished-at="2019-11-03T22:13:01 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testProcessTransaction -->
+        <test-method status="PASS" signature="testProcessTransaction_NoSuchAccountException_2() throws com.bank.exceptions.DuplicateAccountIdException" name="testProcessTransaction_NoSuchAccountException_2" duration-ms="26" started-at="2019-11-03T22:13:01 GMT" finished-at="2019-11-03T22:13:01 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testProcessTransaction_NoSuchAccountException_2 -->
+        <test-method status="PASS" signature="testGetTransaction() throws com.bank.exceptions.DuplicateAccountIdException,com.bank.exceptions.NoSuchAccountException,com.bank.exceptions.NoSuchTransactionException,com.bank.exceptions.InsufficientBalanceException,com.bank.exceptions.TransactionOnSameAccountException" name="testGetTransaction" duration-ms="18" started-at="2019-11-03T22:13:01 GMT" finished-at="2019-11-03T22:13:01 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetTransaction -->
+        <test-method status="PASS" signature="testGetTransactionsForOneAccount_NoSuchAccountException()" name="testGetTransactionsForOneAccount_NoSuchAccountException" duration-ms="28" started-at="2019-11-03T22:13:01 GMT" finished-at="2019-11-03T22:13:01 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetTransactionsForOneAccount_NoSuchAccountException -->
+        <test-method status="PASS" signature="testGetTransactionsForOneAccount() throws com.bank.exceptions.DuplicateAccountIdException,com.bank.exceptions.NoSuchAccountException,com.bank.exceptions.NoSuchTransactionException,com.bank.exceptions.InsufficientBalanceException,com.bank.exceptions.TransactionOnSameAccountException" name="testGetTransactionsForOneAccount" duration-ms="17" started-at="2019-11-03T22:13:01 GMT" finished-at="2019-11-03T22:13:01 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetTransactionsForOneAccount -->
+        <test-method status="PASS" signature="testProcessTransaction_InsufficientBalanceException() throws com.bank.exceptions.DuplicateAccountIdException,com.bank.exceptions.NoSuchAccountException" name="testProcessTransaction_InsufficientBalanceException" duration-ms="22" started-at="2019-11-03T22:13:01 GMT" finished-at="2019-11-03T22:13:01 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testProcessTransaction_InsufficientBalanceException -->
+        <test-method status="PASS" signature="testGetTransaction_NoSuchTransactionException()" name="testGetTransaction_NoSuchTransactionException" duration-ms="4" started-at="2019-11-03T22:13:01 GMT" finished-at="2019-11-03T22:13:01 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetTransaction_NoSuchTransactionException -->
+      </class> <!-- TransactionDAOTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

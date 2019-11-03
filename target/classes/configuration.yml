@@ -1,0 +1,54 @@
+server:
+
+  # Jetty Web Server
+  applicationConnectors:
+    - type: http
+      port: 8080
+  adminConnectors:
+    - type: http
+      port: 8081
+  requestLog:
+    appenders: []
+
+# Logging settings.
+logging:
+
+  # The default level of all loggers. Can be OFF, ERROR, WARN, INFO, DEBUG, TRACE, or ALL.
+  level: INFO
+
+  appenders:
+    - type: console
+
+      # Do not display log statements below this threshold to stdout.
+      threshold: ALL
+
+      # Write to stdout or stderr
+      target: stdout
+
+      # A custom Logback format string.
+      logFormat: "level=\"%p\" timestamp=\"%d{ISO8601,UTC}Z\" category=\"%c\" %replace(%m){'\"password\":\"(.*)\"', '\"password\":\"\"'}%n%xEx"
+
+      # The timezone used to format dates (use UTC)
+      timeZone: UTC
+
+    - type: file
+
+      # Do not write log statements below this threshold to the file.
+      threshold: ALL
+
+      # The file to which current statements will be logged.
+      currentLogFilename: ./logs/log.log
+
+      # When the log file rotates, the archived log will be renamed to this and gzipped. The
+      # %d is replaced with the previous day (yyyy-MM-dd). Custom rolling windows can be created
+      # by passing a SimpleDateFormat-compatible format as an argument: "%d{yyyy-MM-dd-hh}".
+      archivedLogFilenamePattern: ./logs/log-%d.log.gz
+
+      # The number of archived files to keep.
+      archivedFileCount: 10
+
+      # The timezone used to format dates (use UTC)
+      timeZone: UTC
+
+      # A custom Logback format string.
+      logFormat: "level=\"%p\" timestamp=\"%d{ISO8601,UTC}Z\" category=\"%c\" %replace(%m){'\"password\":\"(.*)\"', '\"password\":\"\"'}%n%xEx"

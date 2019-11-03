@@ -1,0 +1,722 @@
+level="INFO" timestamp="2019-11-03 21:45:21,515Z" category="org.eclipse.jetty.util.log" Logging initialized @3089ms to org.eclipse.jetty.util.log.Slf4jLog
+level="INFO" timestamp="2019-11-03 21:45:21,713Z" category="io.dropwizard.server.DefaultServerFactory" Registering jersey handler with root path prefix: /
+level="INFO" timestamp="2019-11-03 21:45:21,716Z" category="io.dropwizard.server.DefaultServerFactory" Registering admin handler with root path prefix: /
+level="INFO" timestamp="2019-11-03 21:45:21,717Z" category="com.bank.ServiceApplication" Registering REST resources
+level="INFO" timestamp="2019-11-03 21:45:21,887Z" category="io.dropwizard.server.ServerFactory" Starting ServiceApplication
+level="INFO" timestamp="2019-11-03 21:45:22,025Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened application@2e5b7fba{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2019-11-03 21:45:22,025Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened admin@27755487{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2019-11-03 21:45:22,028Z" category="org.eclipse.jetty.server.Server" jetty-9.4.7.v20170914
+level="INFO" timestamp="2019-11-03 21:45:23,205Z" category="io.dropwizard.jersey.DropwizardResourceConfig" The following paths were found for the configured resources:
+
+    POST    /api/accounts/create (com.bank.api.AccountAPI)
+    GET     /api/accounts/{id} (com.bank.api.AccountAPI)
+    GET     /api/ping (com.bank.api.AccountAPI)
+    GET     /api/transactions/account (com.bank.api.TransactionAPI)
+    POST    /api/transactions/create (com.bank.api.TransactionAPI)
+    GET     /api/transactions/{id} (com.bank.api.TransactionAPI)
+
+level="INFO" timestamp="2019-11-03 21:45:23,207Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@415d88de{/,null,AVAILABLE}
+level="INFO" timestamp="2019-11-03 21:45:23,216Z" category="io.dropwizard.setup.AdminEnvironment" tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+level="WARN" timestamp="2019-11-03 21:45:23,217Z" category="io.dropwizard.setup.AdminEnvironment" 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+level="INFO" timestamp="2019-11-03 21:45:23,228Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@72028a45{/,null,AVAILABLE}
+level="INFO" timestamp="2019-11-03 21:45:23,250Z" category="org.eclipse.jetty.server.AbstractConnector" Started application@2e5b7fba{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2019-11-03 21:45:23,252Z" category="org.eclipse.jetty.server.AbstractConnector" Started admin@27755487{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2019-11-03 21:45:23,253Z" category="org.eclipse.jetty.server.Server" Started @4844ms
+level="INFO" timestamp="2019-11-03 21:45:34,766Z" category="com.bank.api.AccountAPI" Request to add a new account with id: 1, name: Hang, balance: 100
+level="INFO" timestamp="2019-11-03 21:45:48,730Z" category="com.bank.api.AccountAPI" Request to get the account with id: 1
+level="INFO" timestamp="2019-11-03 21:45:52,480Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped application@2e5b7fba{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2019-11-03 21:45:52,482Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped admin@27755487{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2019-11-03 21:45:52,484Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@72028a45{/,null,UNAVAILABLE}
+level="INFO" timestamp="2019-11-03 21:45:52,492Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@415d88de{/,null,UNAVAILABLE}
+level="INFO" timestamp="2019-11-03 21:47:26,654Z" category="org.eclipse.jetty.util.log" Logging initialized @3419ms to org.eclipse.jetty.util.log.Slf4jLog
+level="INFO" timestamp="2019-11-03 21:47:26,961Z" category="io.dropwizard.server.DefaultServerFactory" Registering jersey handler with root path prefix: /
+level="INFO" timestamp="2019-11-03 21:47:26,964Z" category="io.dropwizard.server.DefaultServerFactory" Registering admin handler with root path prefix: /
+level="INFO" timestamp="2019-11-03 21:47:26,967Z" category="com.bank.ServiceApplication" Registering REST resources
+level="INFO" timestamp="2019-11-03 21:47:27,046Z" category="io.dropwizard.server.ServerFactory" Starting ServiceApplication
+level="INFO" timestamp="2019-11-03 21:47:27,227Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened application@59b65dce{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2019-11-03 21:47:27,227Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened admin@1386313f{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2019-11-03 21:47:27,231Z" category="org.eclipse.jetty.server.Server" jetty-9.4.7.v20170914
+level="INFO" timestamp="2019-11-03 21:47:28,369Z" category="io.dropwizard.jersey.DropwizardResourceConfig" The following paths were found for the configured resources:
+
+    POST    /api/accounts/create (com.bank.api.AccountAPI)
+    GET     /api/accounts/{id} (com.bank.api.AccountAPI)
+    GET     /api/ping (com.bank.api.AccountAPI)
+    GET     /api/transactions/account (com.bank.api.TransactionAPI)
+    POST    /api/transactions/create (com.bank.api.TransactionAPI)
+    GET     /api/transactions/{id} (com.bank.api.TransactionAPI)
+
+level="INFO" timestamp="2019-11-03 21:47:28,373Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@34d480b9{/,null,AVAILABLE}
+level="INFO" timestamp="2019-11-03 21:47:28,378Z" category="io.dropwizard.setup.AdminEnvironment" tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+level="WARN" timestamp="2019-11-03 21:47:28,379Z" category="io.dropwizard.setup.AdminEnvironment" 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+level="INFO" timestamp="2019-11-03 21:47:28,386Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@553d2579{/,null,AVAILABLE}
+level="INFO" timestamp="2019-11-03 21:47:28,401Z" category="org.eclipse.jetty.server.AbstractConnector" Started application@59b65dce{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2019-11-03 21:47:28,403Z" category="org.eclipse.jetty.server.AbstractConnector" Started admin@1386313f{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2019-11-03 21:47:28,404Z" category="org.eclipse.jetty.server.Server" Started @5171ms
+level="INFO" timestamp="2019-11-03 21:47:29,074Z" category="com.bank.api.AccountAPI" Request to add a new account with id: 14, name: Bob, balance: 10.0
+level="INFO" timestamp="2019-11-03 21:47:29,144Z" category="com.bank.api.AccountAPI" Request to add a new account with id: 17, name: Bob, balance: 1000.0
+level="INFO" timestamp="2019-11-03 21:47:29,158Z" category="com.bank.api.AccountAPI" Request to get the account with id: 17
+level="INFO" timestamp="2019-11-03 21:47:29,224Z" category="com.bank.api.AccountAPI" Request to add a new account with id: -1, name: Bob, balance: 10.0
+level="INFO" timestamp="2019-11-03 21:47:29,245Z" category="com.bank.api.AccountAPI" Request to add a new account with id: , name: Bob, balance: 10.0
+level="INFO" timestamp="2019-11-03 21:47:29,275Z" category="com.bank.api.AccountAPI" Request to add a new account with id: 16, name: Bob, balance: -15.0
+level="INFO" timestamp="2019-11-03 21:47:29,304Z" category="com.bank.api.AccountAPI" Request to get the account with id: 18
+level="INFO" timestamp="2019-11-03 21:47:29,354Z" category="com.bank.api.AccountAPI" Request to add a new account with id: 15, name: Bob, balance: 10.0
+level="INFO" timestamp="2019-11-03 21:47:29,398Z" category="com.bank.api.AccountAPI" Request to add a new account with id: 15, name: Bob, balance: 10.0
+level="INFO" timestamp="2019-11-03 21:47:29,487Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped application@59b65dce{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2019-11-03 21:47:29,488Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped admin@1386313f{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2019-11-03 21:47:29,494Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@553d2579{/,null,UNAVAILABLE}
+level="INFO" timestamp="2019-11-03 21:47:29,498Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@34d480b9{/,null,UNAVAILABLE}
+level="INFO" timestamp="2019-11-03 21:47:30,202Z" category="io.dropwizard.server.DefaultServerFactory" Registering jersey handler with root path prefix: /
+level="INFO" timestamp="2019-11-03 21:47:30,204Z" category="io.dropwizard.server.DefaultServerFactory" Registering admin handler with root path prefix: /
+level="INFO" timestamp="2019-11-03 21:47:30,205Z" category="com.bank.ServiceApplication" Registering REST resources
+level="INFO" timestamp="2019-11-03 21:47:30,207Z" category="io.dropwizard.server.ServerFactory" Starting ServiceApplication
+level="INFO" timestamp="2019-11-03 21:47:30,225Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened application@7fb82f73{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2019-11-03 21:47:30,228Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened admin@2f166d61{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2019-11-03 21:47:30,230Z" category="org.eclipse.jetty.server.Server" jetty-9.4.7.v20170914
+level="INFO" timestamp="2019-11-03 21:47:30,383Z" category="io.dropwizard.jersey.DropwizardResourceConfig" The following paths were found for the configured resources:
+
+    POST    /api/accounts/create (com.bank.api.AccountAPI)
+    GET     /api/accounts/{id} (com.bank.api.AccountAPI)
+    GET     /api/ping (com.bank.api.AccountAPI)
+    GET     /api/transactions/account (com.bank.api.TransactionAPI)
+    POST    /api/transactions/create (com.bank.api.TransactionAPI)
+    GET     /api/transactions/{id} (com.bank.api.TransactionAPI)
+
+level="INFO" timestamp="2019-11-03 21:47:30,384Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@5cdda548{/,null,AVAILABLE}
+level="INFO" timestamp="2019-11-03 21:47:30,385Z" category="io.dropwizard.setup.AdminEnvironment" tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+level="WARN" timestamp="2019-11-03 21:47:30,386Z" category="io.dropwizard.setup.AdminEnvironment" 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+level="INFO" timestamp="2019-11-03 21:47:30,387Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@5bad555b{/,null,AVAILABLE}
+level="INFO" timestamp="2019-11-03 21:47:30,395Z" category="org.eclipse.jetty.server.AbstractConnector" Started application@7fb82f73{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2019-11-03 21:47:30,401Z" category="org.eclipse.jetty.server.AbstractConnector" Started admin@2f166d61{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2019-11-03 21:47:30,402Z" category="org.eclipse.jetty.server.Server" Started @7170ms
+level="INFO" timestamp="2019-11-03 21:47:30,442Z" category="com.bank.api.TransactionAPI" Request to transfer 2000.0 from accountId: 21 to accountId: 22
+level="INFO" timestamp="2019-11-03 21:47:30,471Z" category="com.bank.api.TransactionAPI" Request to transfer -100.0 from accountId: 25 to accountId: 26
+level="INFO" timestamp="2019-11-03 21:47:30,491Z" category="com.bank.api.TransactionAPI" Request to get transaction with id: 123456789
+level="INFO" timestamp="2019-11-03 21:47:30,513Z" category="com.bank.api.TransactionAPI" Request to transfer -100.0 from accountId: 27 to accountId: -10
+level="INFO" timestamp="2019-11-03 21:47:30,549Z" category="com.bank.api.TransactionAPI" Request to transfer -100.0 from accountId: 23 to accountId: 24
+level="INFO" timestamp="2019-11-03 21:47:30,576Z" category="com.bank.api.TransactionAPI" Request to transfer 100.0 from accountId: 40 to accountId: 41
+level="INFO" timestamp="2019-11-03 21:47:30,614Z" category="com.bank.api.TransactionAPI" Request to get transaction with id: 5
+level="INFO" timestamp="2019-11-03 21:47:30,653Z" category="com.bank.api.TransactionAPI" Request to transfer 100.0 from accountId: 400 to accountId: 401
+level="INFO" timestamp="2019-11-03 21:47:30,681Z" category="com.bank.api.TransactionAPI" Request to get all the transactions related to an account with id: 400
+level="INFO" timestamp="2019-11-03 21:47:30,704Z" category="com.bank.api.TransactionAPI" Request to transfer 500.0 from accountId: 19 to accountId: 28
+level="INFO" timestamp="2019-11-03 21:47:30,723Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped application@7fb82f73{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2019-11-03 21:47:30,725Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped admin@2f166d61{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2019-11-03 21:47:30,725Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@5bad555b{/,null,UNAVAILABLE}
+level="INFO" timestamp="2019-11-03 21:47:30,731Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@5cdda548{/,null,UNAVAILABLE}
+level="INFO" timestamp="2019-11-03 21:47:31,125Z" category="io.dropwizard.server.DefaultServerFactory" Registering jersey handler with root path prefix: /
+level="INFO" timestamp="2019-11-03 21:47:31,125Z" category="io.dropwizard.server.DefaultServerFactory" Registering admin handler with root path prefix: /
+level="INFO" timestamp="2019-11-03 21:47:31,125Z" category="com.bank.ServiceApplication" Registering REST resources
+level="INFO" timestamp="2019-11-03 21:47:31,126Z" category="io.dropwizard.server.ServerFactory" Starting ServiceApplication
+level="INFO" timestamp="2019-11-03 21:47:31,129Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened application@eb1e868{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2019-11-03 21:47:31,130Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened admin@71a7cf7c{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2019-11-03 21:47:31,130Z" category="org.eclipse.jetty.server.Server" jetty-9.4.7.v20170914
+level="INFO" timestamp="2019-11-03 21:47:31,368Z" category="io.dropwizard.jersey.DropwizardResourceConfig" The following paths were found for the configured resources:
+
+    POST    /api/accounts/create (com.bank.api.AccountAPI)
+    GET     /api/accounts/{id} (com.bank.api.AccountAPI)
+    GET     /api/ping (com.bank.api.AccountAPI)
+    GET     /api/transactions/account (com.bank.api.TransactionAPI)
+    POST    /api/transactions/create (com.bank.api.TransactionAPI)
+    GET     /api/transactions/{id} (com.bank.api.TransactionAPI)
+
+level="INFO" timestamp="2019-11-03 21:47:31,370Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@4b518645{/,null,AVAILABLE}
+level="INFO" timestamp="2019-11-03 21:47:31,370Z" category="io.dropwizard.setup.AdminEnvironment" tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+level="WARN" timestamp="2019-11-03 21:47:31,371Z" category="io.dropwizard.setup.AdminEnvironment" 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+level="INFO" timestamp="2019-11-03 21:47:31,372Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@6e466fdf{/,null,AVAILABLE}
+level="INFO" timestamp="2019-11-03 21:47:31,374Z" category="org.eclipse.jetty.server.AbstractConnector" Started application@eb1e868{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2019-11-03 21:47:31,376Z" category="org.eclipse.jetty.server.AbstractConnector" Started admin@71a7cf7c{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2019-11-03 21:47:31,377Z" category="org.eclipse.jetty.server.Server" Started @8145ms
+level="INFO" timestamp="2019-11-03 21:47:31,782Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped application@eb1e868{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2019-11-03 21:47:31,784Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped admin@71a7cf7c{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2019-11-03 21:47:31,784Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@6e466fdf{/,null,UNAVAILABLE}
+level="INFO" timestamp="2019-11-03 21:47:31,787Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@4b518645{/,null,UNAVAILABLE}
+level="INFO" timestamp="2019-11-03 21:58:01,239Z" category="org.eclipse.jetty.util.log" Logging initialized @1731ms to org.eclipse.jetty.util.log.Slf4jLog
+level="INFO" timestamp="2019-11-03 21:58:01,382Z" category="io.dropwizard.server.DefaultServerFactory" Registering jersey handler with root path prefix: /
+level="INFO" timestamp="2019-11-03 21:58:01,383Z" category="io.dropwizard.server.DefaultServerFactory" Registering admin handler with root path prefix: /
+level="INFO" timestamp="2019-11-03 21:58:01,383Z" category="com.bank.ServiceApplication" Registering REST resources
+level="INFO" timestamp="2019-11-03 21:58:01,438Z" category="io.dropwizard.server.ServerFactory" Starting ServiceApplication
+level="INFO" timestamp="2019-11-03 21:58:01,619Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened application@ff23ae7{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2019-11-03 21:58:01,620Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened admin@423b2b62{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2019-11-03 21:58:01,622Z" category="org.eclipse.jetty.server.Server" jetty-9.4.z-SNAPSHOT
+level="INFO" timestamp="2019-11-03 21:58:02,356Z" category="io.dropwizard.jersey.DropwizardResourceConfig" The following paths were found for the configured resources:
+
+    POST    /api/accounts/create (com.bank.api.AccountAPI)
+    GET     /api/accounts/{id} (com.bank.api.AccountAPI)
+    GET     /api/ping (com.bank.api.AccountAPI)
+    GET     /api/transactions/account (com.bank.api.TransactionAPI)
+    POST    /api/transactions/create (com.bank.api.TransactionAPI)
+    GET     /api/transactions/{id} (com.bank.api.TransactionAPI)
+
+level="INFO" timestamp="2019-11-03 21:58:02,359Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@32091c14{/,null,AVAILABLE}
+level="INFO" timestamp="2019-11-03 21:58:02,367Z" category="io.dropwizard.setup.AdminEnvironment" tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+level="WARN" timestamp="2019-11-03 21:58:02,369Z" category="io.dropwizard.setup.AdminEnvironment" 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+level="INFO" timestamp="2019-11-03 21:58:02,382Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@2921a36a{/,null,AVAILABLE}
+level="INFO" timestamp="2019-11-03 21:58:02,413Z" category="org.eclipse.jetty.server.AbstractConnector" Started application@ff23ae7{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2019-11-03 21:58:02,417Z" category="org.eclipse.jetty.server.AbstractConnector" Started admin@423b2b62{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2019-11-03 21:58:02,418Z" category="org.eclipse.jetty.server.Server" Started @2911ms
+level="INFO" timestamp="2019-11-03 21:58:11,341Z" category="com.bank.api.AccountAPI" Request to get the account with id: 1
+level="INFO" timestamp="2019-11-03 21:58:15,665Z" category="com.bank.api.AccountAPI" Request to add a new account with id: 1, name: Hang, balance: 100
+level="INFO" timestamp="2019-11-03 21:58:33,134Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped application@ff23ae7{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2019-11-03 21:58:33,135Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped admin@423b2b62{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2019-11-03 21:58:33,137Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@2921a36a{/,null,UNAVAILABLE}
+level="INFO" timestamp="2019-11-03 21:58:33,140Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@32091c14{/,null,UNAVAILABLE}
+level="INFO" timestamp="2019-11-03 21:59:06,456Z" category="org.eclipse.jetty.util.log" Logging initialized @1420ms to org.eclipse.jetty.util.log.Slf4jLog
+level="INFO" timestamp="2019-11-03 21:59:06,553Z" category="io.dropwizard.server.DefaultServerFactory" Registering jersey handler with root path prefix: /
+level="INFO" timestamp="2019-11-03 21:59:06,555Z" category="io.dropwizard.server.DefaultServerFactory" Registering admin handler with root path prefix: /
+level="INFO" timestamp="2019-11-03 21:59:06,555Z" category="com.bank.ServiceApplication" Registering REST resources
+level="INFO" timestamp="2019-11-03 21:59:06,602Z" category="io.dropwizard.server.ServerFactory" Starting ServiceApplication
+level="INFO" timestamp="2019-11-03 21:59:06,762Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened application@32130e61{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2019-11-03 21:59:06,762Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened admin@41294371{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2019-11-03 21:59:06,764Z" category="org.eclipse.jetty.server.Server" jetty-9.4.z-SNAPSHOT
+level="INFO" timestamp="2019-11-03 21:59:07,368Z" category="io.dropwizard.jersey.DropwizardResourceConfig" The following paths were found for the configured resources:
+
+    POST    /api/accounts/create (com.bank.api.AccountAPI)
+    GET     /api/accounts/{id} (com.bank.api.AccountAPI)
+    GET     /api/ping (com.bank.api.AccountAPI)
+    GET     /api/transactions/account (com.bank.api.TransactionAPI)
+    POST    /api/transactions/create (com.bank.api.TransactionAPI)
+    GET     /api/transactions/{id} (com.bank.api.TransactionAPI)
+
+level="INFO" timestamp="2019-11-03 21:59:07,371Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@7c1a8f0f{/,null,AVAILABLE}
+level="INFO" timestamp="2019-11-03 21:59:07,378Z" category="io.dropwizard.setup.AdminEnvironment" tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+level="WARN" timestamp="2019-11-03 21:59:07,382Z" category="io.dropwizard.setup.AdminEnvironment" 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+level="INFO" timestamp="2019-11-03 21:59:07,391Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@3663d0ba{/,null,AVAILABLE}
+level="INFO" timestamp="2019-11-03 21:59:07,415Z" category="org.eclipse.jetty.server.AbstractConnector" Started application@32130e61{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2019-11-03 21:59:07,419Z" category="org.eclipse.jetty.server.AbstractConnector" Started admin@41294371{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2019-11-03 21:59:07,422Z" category="org.eclipse.jetty.server.Server" Started @2386ms
+level="INFO" timestamp="2019-11-03 21:59:21,105Z" category="com.bank.api.AccountAPI" Request to add a new account with id: 1, name: Hang, balance: 100
+level="INFO" timestamp="2019-11-03 21:59:26,026Z" category="com.bank.api.AccountAPI" Request to add a new account with id: 2, name: Benito, balance: 50
+level="INFO" timestamp="2019-11-03 21:59:31,174Z" category="com.bank.api.TransactionAPI" Request to transfer 50 from accountId: 2 to accountId: 1
+level="INFO" timestamp="2019-11-03 21:59:41,666Z" category="com.bank.api.AccountAPI" Request to get the account with id: 1
+level="INFO" timestamp="2019-11-03 21:59:57,438Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped application@32130e61{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2019-11-03 21:59:57,439Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped admin@41294371{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2019-11-03 21:59:57,440Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@3663d0ba{/,null,UNAVAILABLE}
+level="INFO" timestamp="2019-11-03 21:59:57,445Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@7c1a8f0f{/,null,UNAVAILABLE}
+level="INFO" timestamp="2019-11-03 22:05:48,519Z" category="org.eclipse.jetty.util.log" Logging initialized @3993ms to org.eclipse.jetty.util.log.Slf4jLog
+level="INFO" timestamp="2019-11-03 22:05:48,822Z" category="io.dropwizard.server.DefaultServerFactory" Registering jersey handler with root path prefix: /
+level="INFO" timestamp="2019-11-03 22:05:48,826Z" category="io.dropwizard.server.DefaultServerFactory" Registering admin handler with root path prefix: /
+level="INFO" timestamp="2019-11-03 22:05:48,829Z" category="com.bank.ServiceApplication" Registering REST resources
+level="INFO" timestamp="2019-11-03 22:05:49,053Z" category="io.dropwizard.server.ServerFactory" Starting ServiceApplication
+level="INFO" timestamp="2019-11-03 22:05:49,361Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened application@6504a875{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2019-11-03 22:05:49,362Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened admin@35e26d05{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2019-11-03 22:05:49,366Z" category="org.eclipse.jetty.server.Server" jetty-9.4.7.v20170914
+level="INFO" timestamp="2019-11-03 22:05:50,972Z" category="io.dropwizard.jersey.DropwizardResourceConfig" The following paths were found for the configured resources:
+
+    POST    /api/accounts/create (com.bank.api.AccountAPI)
+    GET     /api/accounts/{id} (com.bank.api.AccountAPI)
+    GET     /api/ping (com.bank.api.AccountAPI)
+    GET     /api/transactions/account (com.bank.api.TransactionAPI)
+    POST    /api/transactions/create (com.bank.api.TransactionAPI)
+    GET     /api/transactions/{id} (com.bank.api.TransactionAPI)
+
+level="INFO" timestamp="2019-11-03 22:05:50,974Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@1df5c7e3{/,null,AVAILABLE}
+level="INFO" timestamp="2019-11-03 22:05:50,978Z" category="io.dropwizard.setup.AdminEnvironment" tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+level="WARN" timestamp="2019-11-03 22:05:50,979Z" category="io.dropwizard.setup.AdminEnvironment" 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+level="INFO" timestamp="2019-11-03 22:05:50,986Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@3cdff901{/,null,AVAILABLE}
+level="INFO" timestamp="2019-11-03 22:05:51,002Z" category="org.eclipse.jetty.server.AbstractConnector" Started application@6504a875{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2019-11-03 22:05:51,005Z" category="org.eclipse.jetty.server.AbstractConnector" Started admin@35e26d05{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2019-11-03 22:05:51,005Z" category="org.eclipse.jetty.server.Server" Started @6481ms
+level="INFO" timestamp="2019-11-03 22:05:51,616Z" category="com.bank.api.AccountAPI" Request to add a new account with id: 14, name: Bob, balance: 10.0
+level="INFO" timestamp="2019-11-03 22:05:51,682Z" category="com.bank.api.AccountAPI" Request to add a new account with id: 17, name: Bob, balance: 1000.0
+level="INFO" timestamp="2019-11-03 22:05:51,693Z" category="com.bank.api.AccountAPI" Request to get the account with id: 17
+level="INFO" timestamp="2019-11-03 22:05:51,735Z" category="com.bank.api.AccountAPI" Request to add a new account with id: -1, name: Bob, balance: 10.0
+level="INFO" timestamp="2019-11-03 22:05:51,746Z" category="com.bank.api.AccountAPI" Request to add a new account with id: , name: Bob, balance: 10.0
+level="INFO" timestamp="2019-11-03 22:05:51,756Z" category="com.bank.api.AccountAPI" Request to add a new account with id: 16, name: Bob, balance: -15.0
+level="INFO" timestamp="2019-11-03 22:05:51,767Z" category="com.bank.api.AccountAPI" Request to get the account with id: 18
+level="INFO" timestamp="2019-11-03 22:05:51,776Z" category="com.bank.api.AccountAPI" Request to add a new account with id: 15, name: Bob, balance: 10.0
+level="INFO" timestamp="2019-11-03 22:05:51,785Z" category="com.bank.api.AccountAPI" Request to add a new account with id: 15, name: Bob, balance: 10.0
+level="INFO" timestamp="2019-11-03 22:05:51,803Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped application@6504a875{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2019-11-03 22:05:51,804Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped admin@35e26d05{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2019-11-03 22:05:51,806Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@3cdff901{/,null,UNAVAILABLE}
+level="INFO" timestamp="2019-11-03 22:05:51,811Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@1df5c7e3{/,null,UNAVAILABLE}
+level="INFO" timestamp="2019-11-03 22:05:52,080Z" category="io.dropwizard.server.DefaultServerFactory" Registering jersey handler with root path prefix: /
+level="INFO" timestamp="2019-11-03 22:05:52,080Z" category="io.dropwizard.server.DefaultServerFactory" Registering admin handler with root path prefix: /
+level="INFO" timestamp="2019-11-03 22:05:52,080Z" category="com.bank.ServiceApplication" Registering REST resources
+level="INFO" timestamp="2019-11-03 22:05:52,081Z" category="io.dropwizard.server.ServerFactory" Starting ServiceApplication
+level="INFO" timestamp="2019-11-03 22:05:52,084Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened application@93f15f6{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2019-11-03 22:05:52,085Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened admin@5034681f{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2019-11-03 22:05:52,085Z" category="org.eclipse.jetty.server.Server" jetty-9.4.7.v20170914
+level="INFO" timestamp="2019-11-03 22:05:52,221Z" category="io.dropwizard.jersey.DropwizardResourceConfig" The following paths were found for the configured resources:
+
+    POST    /api/accounts/create (com.bank.api.AccountAPI)
+    GET     /api/accounts/{id} (com.bank.api.AccountAPI)
+    GET     /api/ping (com.bank.api.AccountAPI)
+    GET     /api/transactions/account (com.bank.api.TransactionAPI)
+    POST    /api/transactions/create (com.bank.api.TransactionAPI)
+    GET     /api/transactions/{id} (com.bank.api.TransactionAPI)
+
+level="INFO" timestamp="2019-11-03 22:05:52,222Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@7252bdb{/,null,AVAILABLE}
+level="INFO" timestamp="2019-11-03 22:05:52,223Z" category="io.dropwizard.setup.AdminEnvironment" tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+level="WARN" timestamp="2019-11-03 22:05:52,224Z" category="io.dropwizard.setup.AdminEnvironment" 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+level="INFO" timestamp="2019-11-03 22:05:52,225Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@4cd8db31{/,null,AVAILABLE}
+level="INFO" timestamp="2019-11-03 22:05:52,226Z" category="org.eclipse.jetty.server.AbstractConnector" Started application@93f15f6{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2019-11-03 22:05:52,227Z" category="org.eclipse.jetty.server.AbstractConnector" Started admin@5034681f{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2019-11-03 22:05:52,228Z" category="org.eclipse.jetty.server.Server" Started @7703ms
+level="INFO" timestamp="2019-11-03 22:05:52,242Z" category="com.bank.api.TransactionAPI" Request to transfer 2000.0 from accountId: 21 to accountId: 22
+level="INFO" timestamp="2019-11-03 22:05:52,257Z" category="com.bank.api.TransactionAPI" Request to transfer -100.0 from accountId: 25 to accountId: 26
+level="INFO" timestamp="2019-11-03 22:05:52,265Z" category="com.bank.api.TransactionAPI" Request to get transaction with id: 123456789
+level="INFO" timestamp="2019-11-03 22:05:52,279Z" category="com.bank.api.TransactionAPI" Request to transfer -100.0 from accountId: 27 to accountId: -10
+level="INFO" timestamp="2019-11-03 22:05:52,290Z" category="com.bank.api.TransactionAPI" Request to transfer -100.0 from accountId: 23 to accountId: 24
+level="INFO" timestamp="2019-11-03 22:05:52,301Z" category="com.bank.api.TransactionAPI" Request to transfer 100.0 from accountId: 40 to accountId: 41
+level="INFO" timestamp="2019-11-03 22:05:52,311Z" category="com.bank.api.TransactionAPI" Request to get transaction with id: 5
+level="INFO" timestamp="2019-11-03 22:05:52,323Z" category="com.bank.api.TransactionAPI" Request to transfer 100.0 from accountId: 400 to accountId: 401
+level="INFO" timestamp="2019-11-03 22:05:52,331Z" category="com.bank.api.TransactionAPI" Request to get all the transactions related to an account with id: 400
+level="INFO" timestamp="2019-11-03 22:05:52,347Z" category="com.bank.api.TransactionAPI" Request to transfer 500.0 from accountId: 19 to accountId: 28
+level="INFO" timestamp="2019-11-03 22:05:52,351Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped application@93f15f6{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2019-11-03 22:05:52,352Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped admin@5034681f{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2019-11-03 22:05:52,353Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@4cd8db31{/,null,UNAVAILABLE}
+level="INFO" timestamp="2019-11-03 22:05:52,355Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@7252bdb{/,null,UNAVAILABLE}
+level="INFO" timestamp="2019-11-03 22:05:52,538Z" category="io.dropwizard.server.DefaultServerFactory" Registering jersey handler with root path prefix: /
+level="INFO" timestamp="2019-11-03 22:05:52,538Z" category="io.dropwizard.server.DefaultServerFactory" Registering admin handler with root path prefix: /
+level="INFO" timestamp="2019-11-03 22:05:52,539Z" category="com.bank.ServiceApplication" Registering REST resources
+level="INFO" timestamp="2019-11-03 22:05:52,539Z" category="io.dropwizard.server.ServerFactory" Starting ServiceApplication
+level="INFO" timestamp="2019-11-03 22:05:52,542Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened application@3140ad41{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2019-11-03 22:05:52,543Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened admin@3f2d2f22{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2019-11-03 22:05:52,543Z" category="org.eclipse.jetty.server.Server" jetty-9.4.7.v20170914
+level="INFO" timestamp="2019-11-03 22:05:52,656Z" category="io.dropwizard.jersey.DropwizardResourceConfig" The following paths were found for the configured resources:
+
+    POST    /api/accounts/create (com.bank.api.AccountAPI)
+    GET     /api/accounts/{id} (com.bank.api.AccountAPI)
+    GET     /api/ping (com.bank.api.AccountAPI)
+    GET     /api/transactions/account (com.bank.api.TransactionAPI)
+    POST    /api/transactions/create (com.bank.api.TransactionAPI)
+    GET     /api/transactions/{id} (com.bank.api.TransactionAPI)
+
+level="INFO" timestamp="2019-11-03 22:05:52,658Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@106f2425{/,null,AVAILABLE}
+level="INFO" timestamp="2019-11-03 22:05:52,659Z" category="io.dropwizard.setup.AdminEnvironment" tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+level="WARN" timestamp="2019-11-03 22:05:52,659Z" category="io.dropwizard.setup.AdminEnvironment" 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+level="INFO" timestamp="2019-11-03 22:05:52,660Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@362fd4e9{/,null,AVAILABLE}
+level="INFO" timestamp="2019-11-03 22:05:52,661Z" category="org.eclipse.jetty.server.AbstractConnector" Started application@3140ad41{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2019-11-03 22:05:52,662Z" category="org.eclipse.jetty.server.AbstractConnector" Started admin@3f2d2f22{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2019-11-03 22:05:52,663Z" category="org.eclipse.jetty.server.Server" Started @8138ms
+level="INFO" timestamp="2019-11-03 22:05:52,917Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped application@3140ad41{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2019-11-03 22:05:52,918Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped admin@3f2d2f22{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2019-11-03 22:05:52,918Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@362fd4e9{/,null,UNAVAILABLE}
+level="INFO" timestamp="2019-11-03 22:05:52,920Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@106f2425{/,null,UNAVAILABLE}
+level="INFO" timestamp="2019-11-03 22:11:21,312Z" category="org.eclipse.jetty.util.log" Logging initialized @2671ms to org.eclipse.jetty.util.log.Slf4jLog
+level="INFO" timestamp="2019-11-03 22:11:21,658Z" category="io.dropwizard.server.DefaultServerFactory" Registering jersey handler with root path prefix: /
+level="INFO" timestamp="2019-11-03 22:11:21,661Z" category="io.dropwizard.server.DefaultServerFactory" Registering admin handler with root path prefix: /
+level="INFO" timestamp="2019-11-03 22:11:21,669Z" category="com.bank.ServiceApplication" Registering REST resources
+level="INFO" timestamp="2019-11-03 22:11:21,774Z" category="io.dropwizard.server.ServerFactory" Starting ServiceApplication
+level="INFO" timestamp="2019-11-03 22:11:21,928Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened application@6bfaa0a6{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2019-11-03 22:11:21,929Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened admin@76e9f00b{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2019-11-03 22:11:21,936Z" category="org.eclipse.jetty.server.Server" jetty-9.4.7.v20170914
+level="INFO" timestamp="2019-11-03 22:11:23,403Z" category="io.dropwizard.jersey.DropwizardResourceConfig" The following paths were found for the configured resources:
+
+    POST    /api/accounts/create (com.bank.api.AccountAPI)
+    GET     /api/accounts/{id} (com.bank.api.AccountAPI)
+    GET     /api/ping (com.bank.api.AccountAPI)
+    GET     /api/transactions/account (com.bank.api.TransactionAPI)
+    POST    /api/transactions/create (com.bank.api.TransactionAPI)
+    GET     /api/transactions/{id} (com.bank.api.TransactionAPI)
+
+level="INFO" timestamp="2019-11-03 22:11:23,406Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@4c38cd16{/,null,AVAILABLE}
+level="INFO" timestamp="2019-11-03 22:11:23,410Z" category="io.dropwizard.setup.AdminEnvironment" tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+level="WARN" timestamp="2019-11-03 22:11:23,413Z" category="io.dropwizard.setup.AdminEnvironment" 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+level="INFO" timestamp="2019-11-03 22:11:23,456Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@183fc2fa{/,null,AVAILABLE}
+level="INFO" timestamp="2019-11-03 22:11:23,481Z" category="org.eclipse.jetty.server.AbstractConnector" Started application@6bfaa0a6{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2019-11-03 22:11:23,483Z" category="org.eclipse.jetty.server.AbstractConnector" Started admin@76e9f00b{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2019-11-03 22:11:23,484Z" category="org.eclipse.jetty.server.Server" Started @4845ms
+level="INFO" timestamp="2019-11-03 22:11:24,352Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped application@6bfaa0a6{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2019-11-03 22:11:24,353Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped admin@76e9f00b{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2019-11-03 22:11:24,355Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@183fc2fa{/,null,UNAVAILABLE}
+level="INFO" timestamp="2019-11-03 22:11:24,358Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@4c38cd16{/,null,UNAVAILABLE}
+level="INFO" timestamp="2019-11-03 22:11:24,578Z" category="io.dropwizard.server.DefaultServerFactory" Registering jersey handler with root path prefix: /
+level="INFO" timestamp="2019-11-03 22:11:24,578Z" category="io.dropwizard.server.DefaultServerFactory" Registering admin handler with root path prefix: /
+level="INFO" timestamp="2019-11-03 22:11:24,578Z" category="com.bank.ServiceApplication" Registering REST resources
+level="INFO" timestamp="2019-11-03 22:11:24,580Z" category="io.dropwizard.server.ServerFactory" Starting ServiceApplication
+level="INFO" timestamp="2019-11-03 22:11:24,586Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened application@1425e531{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2019-11-03 22:11:24,588Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened admin@194e78af{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2019-11-03 22:11:24,588Z" category="org.eclipse.jetty.server.Server" jetty-9.4.7.v20170914
+level="INFO" timestamp="2019-11-03 22:11:24,727Z" category="io.dropwizard.jersey.DropwizardResourceConfig" The following paths were found for the configured resources:
+
+    POST    /api/accounts/create (com.bank.api.AccountAPI)
+    GET     /api/accounts/{id} (com.bank.api.AccountAPI)
+    GET     /api/ping (com.bank.api.AccountAPI)
+    GET     /api/transactions/account (com.bank.api.TransactionAPI)
+    POST    /api/transactions/create (com.bank.api.TransactionAPI)
+    GET     /api/transactions/{id} (com.bank.api.TransactionAPI)
+
+level="INFO" timestamp="2019-11-03 22:11:24,729Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@4c5e4bfa{/,null,AVAILABLE}
+level="INFO" timestamp="2019-11-03 22:11:24,730Z" category="io.dropwizard.setup.AdminEnvironment" tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+level="WARN" timestamp="2019-11-03 22:11:24,730Z" category="io.dropwizard.setup.AdminEnvironment" 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+level="INFO" timestamp="2019-11-03 22:11:24,731Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@61d6c8c4{/,null,AVAILABLE}
+level="INFO" timestamp="2019-11-03 22:11:24,733Z" category="org.eclipse.jetty.server.AbstractConnector" Started application@1425e531{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2019-11-03 22:11:24,736Z" category="org.eclipse.jetty.server.AbstractConnector" Started admin@194e78af{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2019-11-03 22:11:24,736Z" category="org.eclipse.jetty.server.Server" Started @6097ms
+level="INFO" timestamp="2019-11-03 22:11:24,806Z" category="com.bank.api.AccountAPI" Request to add a new account with id: 14, name: Bob, balance: 10.0
+level="INFO" timestamp="2019-11-03 22:11:24,832Z" category="com.bank.api.AccountAPI" Request to add a new account with id: 17, name: Bob, balance: 1000.0
+level="INFO" timestamp="2019-11-03 22:11:24,857Z" category="com.bank.api.AccountAPI" Request to get the account with id: 17
+level="INFO" timestamp="2019-11-03 22:11:24,911Z" category="com.bank.api.AccountAPI" Request to add a new account with id: -1, name: Bob, balance: 10.0
+level="INFO" timestamp="2019-11-03 22:11:24,921Z" category="com.bank.api.AccountAPI" Request to add a new account with id: , name: Bob, balance: 10.0
+level="INFO" timestamp="2019-11-03 22:11:24,930Z" category="com.bank.api.AccountAPI" Request to add a new account with id: 16, name: Bob, balance: -15.0
+level="INFO" timestamp="2019-11-03 22:11:24,943Z" category="com.bank.api.AccountAPI" Request to get the account with id: 18
+level="INFO" timestamp="2019-11-03 22:11:24,965Z" category="com.bank.api.AccountAPI" Request to add a new account with id: 15, name: Bob, balance: 10.0
+level="INFO" timestamp="2019-11-03 22:11:24,982Z" category="com.bank.api.AccountAPI" Request to add a new account with id: 15, name: Bob, balance: 10.0
+level="INFO" timestamp="2019-11-03 22:11:24,995Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped application@1425e531{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2019-11-03 22:11:25,005Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped admin@194e78af{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2019-11-03 22:11:25,006Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@61d6c8c4{/,null,UNAVAILABLE}
+level="INFO" timestamp="2019-11-03 22:11:25,012Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@4c5e4bfa{/,null,UNAVAILABLE}
+level="INFO" timestamp="2019-11-03 22:11:25,234Z" category="io.dropwizard.server.DefaultServerFactory" Registering jersey handler with root path prefix: /
+level="INFO" timestamp="2019-11-03 22:11:25,235Z" category="io.dropwizard.server.DefaultServerFactory" Registering admin handler with root path prefix: /
+level="INFO" timestamp="2019-11-03 22:11:25,235Z" category="com.bank.ServiceApplication" Registering REST resources
+level="INFO" timestamp="2019-11-03 22:11:25,236Z" category="io.dropwizard.server.ServerFactory" Starting ServiceApplication
+level="INFO" timestamp="2019-11-03 22:11:25,239Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened application@1e6e29d6{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2019-11-03 22:11:25,241Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened admin@7359f3ac{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2019-11-03 22:11:25,241Z" category="org.eclipse.jetty.server.Server" jetty-9.4.7.v20170914
+level="INFO" timestamp="2019-11-03 22:11:25,400Z" category="io.dropwizard.jersey.DropwizardResourceConfig" The following paths were found for the configured resources:
+
+    POST    /api/accounts/create (com.bank.api.AccountAPI)
+    GET     /api/accounts/{id} (com.bank.api.AccountAPI)
+    GET     /api/ping (com.bank.api.AccountAPI)
+    GET     /api/transactions/account (com.bank.api.TransactionAPI)
+    POST    /api/transactions/create (com.bank.api.TransactionAPI)
+    GET     /api/transactions/{id} (com.bank.api.TransactionAPI)
+
+level="INFO" timestamp="2019-11-03 22:11:25,403Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@64836643{/,null,AVAILABLE}
+level="INFO" timestamp="2019-11-03 22:11:25,407Z" category="io.dropwizard.setup.AdminEnvironment" tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+level="WARN" timestamp="2019-11-03 22:11:25,411Z" category="io.dropwizard.setup.AdminEnvironment" 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+level="INFO" timestamp="2019-11-03 22:11:25,414Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@ad6448e{/,null,AVAILABLE}
+level="INFO" timestamp="2019-11-03 22:11:25,417Z" category="org.eclipse.jetty.server.AbstractConnector" Started application@1e6e29d6{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2019-11-03 22:11:25,421Z" category="org.eclipse.jetty.server.AbstractConnector" Started admin@7359f3ac{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2019-11-03 22:11:25,425Z" category="org.eclipse.jetty.server.Server" Started @6785ms
+level="INFO" timestamp="2019-11-03 22:11:25,472Z" category="com.bank.api.TransactionAPI" Request to transfer 2000.0 from accountId: 21 to accountId: 22
+level="INFO" timestamp="2019-11-03 22:11:25,499Z" category="com.bank.api.TransactionAPI" Request to transfer -100.0 from accountId: 25 to accountId: 26
+level="INFO" timestamp="2019-11-03 22:11:25,512Z" category="com.bank.api.TransactionAPI" Request to get transaction with id: 123456789
+level="INFO" timestamp="2019-11-03 22:11:25,563Z" category="com.bank.api.TransactionAPI" Request to transfer -100.0 from accountId: 27 to accountId: -10
+level="INFO" timestamp="2019-11-03 22:11:25,572Z" category="com.bank.api.TransactionAPI" Request to transfer -100.0 from accountId: 23 to accountId: 24
+level="INFO" timestamp="2019-11-03 22:11:25,581Z" category="com.bank.api.TransactionAPI" Request to transfer 100.0 from accountId: 40 to accountId: 41
+level="INFO" timestamp="2019-11-03 22:11:25,587Z" category="com.bank.api.TransactionAPI" Request to get transaction with id: 5
+level="INFO" timestamp="2019-11-03 22:11:25,602Z" category="com.bank.api.TransactionAPI" Request to transfer 100.0 from accountId: 400 to accountId: 401
+level="INFO" timestamp="2019-11-03 22:11:25,620Z" category="com.bank.api.TransactionAPI" Request to get all the transactions related to an account with id: 400
+level="INFO" timestamp="2019-11-03 22:11:25,643Z" category="com.bank.api.TransactionAPI" Request to transfer 500.0 from accountId: 19 to accountId: 28
+level="INFO" timestamp="2019-11-03 22:11:25,649Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped application@1e6e29d6{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2019-11-03 22:11:25,659Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped admin@7359f3ac{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2019-11-03 22:11:25,662Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@ad6448e{/,null,UNAVAILABLE}
+level="INFO" timestamp="2019-11-03 22:11:25,666Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@64836643{/,null,UNAVAILABLE}
+level="INFO" timestamp="2019-11-03 22:12:57,486Z" category="org.eclipse.jetty.util.log" Logging initialized @3442ms to org.eclipse.jetty.util.log.Slf4jLog
+level="INFO" timestamp="2019-11-03 22:12:57,670Z" category="io.dropwizard.server.DefaultServerFactory" Registering jersey handler with root path prefix: /
+level="INFO" timestamp="2019-11-03 22:12:57,674Z" category="io.dropwizard.server.DefaultServerFactory" Registering admin handler with root path prefix: /
+level="INFO" timestamp="2019-11-03 22:12:57,677Z" category="com.bank.ServiceApplication" Registering REST resources
+level="INFO" timestamp="2019-11-03 22:12:57,754Z" category="io.dropwizard.server.ServerFactory" Starting ServiceApplication
+level="INFO" timestamp="2019-11-03 22:12:57,962Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened application@6bfaa0a6{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2019-11-03 22:12:57,964Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened admin@76e9f00b{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2019-11-03 22:12:57,967Z" category="org.eclipse.jetty.server.Server" jetty-9.4.7.v20170914
+level="INFO" timestamp="2019-11-03 22:12:58,971Z" category="io.dropwizard.jersey.DropwizardResourceConfig" The following paths were found for the configured resources:
+
+    POST    /api/accounts/create (com.bank.api.AccountAPI)
+    GET     /api/accounts/{id} (com.bank.api.AccountAPI)
+    GET     /api/ping (com.bank.api.AccountAPI)
+    GET     /api/transactions/account (com.bank.api.TransactionAPI)
+    POST    /api/transactions/create (com.bank.api.TransactionAPI)
+    GET     /api/transactions/{id} (com.bank.api.TransactionAPI)
+
+level="INFO" timestamp="2019-11-03 22:12:58,980Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@4c38cd16{/,null,AVAILABLE}
+level="INFO" timestamp="2019-11-03 22:12:58,989Z" category="io.dropwizard.setup.AdminEnvironment" tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+level="WARN" timestamp="2019-11-03 22:12:58,992Z" category="io.dropwizard.setup.AdminEnvironment" 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+level="INFO" timestamp="2019-11-03 22:12:59,014Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@183fc2fa{/,null,AVAILABLE}
+level="INFO" timestamp="2019-11-03 22:12:59,076Z" category="org.eclipse.jetty.server.AbstractConnector" Started application@6bfaa0a6{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2019-11-03 22:12:59,078Z" category="org.eclipse.jetty.server.AbstractConnector" Started admin@76e9f00b{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2019-11-03 22:12:59,080Z" category="org.eclipse.jetty.server.Server" Started @5037ms
+level="INFO" timestamp="2019-11-03 22:13:00,099Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped application@6bfaa0a6{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2019-11-03 22:13:00,102Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped admin@76e9f00b{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2019-11-03 22:13:00,104Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@183fc2fa{/,null,UNAVAILABLE}
+level="INFO" timestamp="2019-11-03 22:13:00,111Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@4c38cd16{/,null,UNAVAILABLE}
+level="INFO" timestamp="2019-11-03 22:13:00,387Z" category="io.dropwizard.server.DefaultServerFactory" Registering jersey handler with root path prefix: /
+level="INFO" timestamp="2019-11-03 22:13:00,387Z" category="io.dropwizard.server.DefaultServerFactory" Registering admin handler with root path prefix: /
+level="INFO" timestamp="2019-11-03 22:13:00,387Z" category="com.bank.ServiceApplication" Registering REST resources
+level="INFO" timestamp="2019-11-03 22:13:00,390Z" category="io.dropwizard.server.ServerFactory" Starting ServiceApplication
+level="INFO" timestamp="2019-11-03 22:13:00,395Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened application@1425e531{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2019-11-03 22:13:00,395Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened admin@194e78af{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2019-11-03 22:13:00,396Z" category="org.eclipse.jetty.server.Server" jetty-9.4.7.v20170914
+level="INFO" timestamp="2019-11-03 22:13:00,797Z" category="io.dropwizard.jersey.DropwizardResourceConfig" The following paths were found for the configured resources:
+
+    POST    /api/accounts/create (com.bank.api.AccountAPI)
+    GET     /api/accounts/{id} (com.bank.api.AccountAPI)
+    GET     /api/ping (com.bank.api.AccountAPI)
+    GET     /api/transactions/account (com.bank.api.TransactionAPI)
+    POST    /api/transactions/create (com.bank.api.TransactionAPI)
+    GET     /api/transactions/{id} (com.bank.api.TransactionAPI)
+
+level="INFO" timestamp="2019-11-03 22:13:00,800Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@4c5e4bfa{/,null,AVAILABLE}
+level="INFO" timestamp="2019-11-03 22:13:00,802Z" category="io.dropwizard.setup.AdminEnvironment" tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+level="WARN" timestamp="2019-11-03 22:13:00,808Z" category="io.dropwizard.setup.AdminEnvironment" 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+level="INFO" timestamp="2019-11-03 22:13:00,814Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@61d6c8c4{/,null,AVAILABLE}
+level="INFO" timestamp="2019-11-03 22:13:00,823Z" category="org.eclipse.jetty.server.AbstractConnector" Started application@1425e531{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2019-11-03 22:13:00,827Z" category="org.eclipse.jetty.server.AbstractConnector" Started admin@194e78af{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2019-11-03 22:13:00,828Z" category="org.eclipse.jetty.server.Server" Started @6786ms
+level="INFO" timestamp="2019-11-03 22:13:00,902Z" category="com.bank.api.AccountAPI" Request to add a new account with id: 14, name: Bob, balance: 10.0
+level="INFO" timestamp="2019-11-03 22:13:00,931Z" category="com.bank.api.AccountAPI" Request to add a new account with id: 17, name: Bob, balance: 1000.0
+level="INFO" timestamp="2019-11-03 22:13:00,942Z" category="com.bank.api.AccountAPI" Request to get the account with id: 17
+level="INFO" timestamp="2019-11-03 22:13:00,982Z" category="com.bank.api.AccountAPI" Request to add a new account with id: -1, name: Bob, balance: 10.0
+level="INFO" timestamp="2019-11-03 22:13:00,992Z" category="com.bank.api.AccountAPI" Request to add a new account with id: , name: Bob, balance: 10.0
+level="INFO" timestamp="2019-11-03 22:13:01,007Z" category="com.bank.api.AccountAPI" Request to add a new account with id: 16, name: Bob, balance: -15.0
+level="INFO" timestamp="2019-11-03 22:13:01,037Z" category="com.bank.api.AccountAPI" Request to get the account with id: 18
+level="INFO" timestamp="2019-11-03 22:13:01,069Z" category="com.bank.api.AccountAPI" Request to add a new account with id: 15, name: Bob, balance: 10.0
+level="INFO" timestamp="2019-11-03 22:13:01,088Z" category="com.bank.api.AccountAPI" Request to add a new account with id: 15, name: Bob, balance: 10.0
+level="INFO" timestamp="2019-11-03 22:13:01,116Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped application@1425e531{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2019-11-03 22:13:01,123Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped admin@194e78af{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2019-11-03 22:13:01,124Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@61d6c8c4{/,null,UNAVAILABLE}
+level="INFO" timestamp="2019-11-03 22:13:01,133Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@4c5e4bfa{/,null,UNAVAILABLE}
+level="INFO" timestamp="2019-11-03 22:13:01,881Z" category="io.dropwizard.server.DefaultServerFactory" Registering jersey handler with root path prefix: /
+level="INFO" timestamp="2019-11-03 22:13:01,883Z" category="io.dropwizard.server.DefaultServerFactory" Registering admin handler with root path prefix: /
+level="INFO" timestamp="2019-11-03 22:13:01,883Z" category="com.bank.ServiceApplication" Registering REST resources
+level="INFO" timestamp="2019-11-03 22:13:01,884Z" category="io.dropwizard.server.ServerFactory" Starting ServiceApplication
+level="INFO" timestamp="2019-11-03 22:13:01,892Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened application@1e6e29d6{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2019-11-03 22:13:01,893Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened admin@7359f3ac{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2019-11-03 22:13:01,898Z" category="org.eclipse.jetty.server.Server" jetty-9.4.7.v20170914
+level="INFO" timestamp="2019-11-03 22:13:02,146Z" category="io.dropwizard.jersey.DropwizardResourceConfig" The following paths were found for the configured resources:
+
+    POST    /api/accounts/create (com.bank.api.AccountAPI)
+    GET     /api/accounts/{id} (com.bank.api.AccountAPI)
+    GET     /api/ping (com.bank.api.AccountAPI)
+    GET     /api/transactions/account (com.bank.api.TransactionAPI)
+    POST    /api/transactions/create (com.bank.api.TransactionAPI)
+    GET     /api/transactions/{id} (com.bank.api.TransactionAPI)
+
+level="INFO" timestamp="2019-11-03 22:13:02,147Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@64836643{/,null,AVAILABLE}
+level="INFO" timestamp="2019-11-03 22:13:02,148Z" category="io.dropwizard.setup.AdminEnvironment" tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+level="WARN" timestamp="2019-11-03 22:13:02,148Z" category="io.dropwizard.setup.AdminEnvironment" 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+level="INFO" timestamp="2019-11-03 22:13:02,151Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@ad6448e{/,null,AVAILABLE}
+level="INFO" timestamp="2019-11-03 22:13:02,153Z" category="org.eclipse.jetty.server.AbstractConnector" Started application@1e6e29d6{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2019-11-03 22:13:02,155Z" category="org.eclipse.jetty.server.AbstractConnector" Started admin@7359f3ac{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2019-11-03 22:13:02,155Z" category="org.eclipse.jetty.server.Server" Started @8113ms
+level="INFO" timestamp="2019-11-03 22:13:02,173Z" category="com.bank.api.TransactionAPI" Request to transfer 2000.0 from accountId: 21 to accountId: 22
+level="INFO" timestamp="2019-11-03 22:13:02,194Z" category="com.bank.api.TransactionAPI" Request to transfer -100.0 from accountId: 25 to accountId: 26
+level="INFO" timestamp="2019-11-03 22:13:02,208Z" category="com.bank.api.TransactionAPI" Request to get transaction with id: 123456789
+level="INFO" timestamp="2019-11-03 22:13:02,226Z" category="com.bank.api.TransactionAPI" Request to transfer -100.0 from accountId: 27 to accountId: -10
+level="INFO" timestamp="2019-11-03 22:13:02,256Z" category="com.bank.api.TransactionAPI" Request to transfer -100.0 from accountId: 23 to accountId: 24
+level="INFO" timestamp="2019-11-03 22:13:02,292Z" category="com.bank.api.TransactionAPI" Request to transfer 100.0 from accountId: 40 to accountId: 41
+level="INFO" timestamp="2019-11-03 22:13:02,319Z" category="com.bank.api.TransactionAPI" Request to get transaction with id: 5
+level="INFO" timestamp="2019-11-03 22:13:02,352Z" category="com.bank.api.TransactionAPI" Request to transfer 100.0 from accountId: 400 to accountId: 401
+level="INFO" timestamp="2019-11-03 22:13:02,372Z" category="com.bank.api.TransactionAPI" Request to get all the transactions related to an account with id: 400
+level="INFO" timestamp="2019-11-03 22:13:02,393Z" category="com.bank.api.TransactionAPI" Request to transfer 500.0 from accountId: 19 to accountId: 28
+level="INFO" timestamp="2019-11-03 22:13:02,402Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped application@1e6e29d6{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2019-11-03 22:13:02,407Z" category="org.eclipse.jetty.server.AbstractConnector" Stopped admin@7359f3ac{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2019-11-03 22:13:02,412Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@ad6448e{/,null,UNAVAILABLE}
+level="INFO" timestamp="2019-11-03 22:13:02,418Z" category="org.eclipse.jetty.server.handler.ContextHandler" Stopped i.d.j.MutableServletContextHandler@64836643{/,null,UNAVAILABLE}
+level="INFO" timestamp="2019-11-03 22:13:35,177Z" category="org.eclipse.jetty.util.log" Logging initialized @2299ms to org.eclipse.jetty.util.log.Slf4jLog
+level="INFO" timestamp="2019-11-03 22:13:35,388Z" category="io.dropwizard.server.DefaultServerFactory" Registering jersey handler with root path prefix: /
+level="INFO" timestamp="2019-11-03 22:13:35,390Z" category="io.dropwizard.server.DefaultServerFactory" Registering admin handler with root path prefix: /
+level="INFO" timestamp="2019-11-03 22:13:35,390Z" category="com.bank.ServiceApplication" Registering REST resources
+level="INFO" timestamp="2019-11-03 22:13:35,493Z" category="io.dropwizard.server.ServerFactory" Starting ServiceApplication
+level="INFO" timestamp="2019-11-03 22:13:35,755Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened application@ff23ae7{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2019-11-03 22:13:35,756Z" category="org.eclipse.jetty.setuid.SetUIDListener" Opened admin@423b2b62{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2019-11-03 22:13:35,759Z" category="org.eclipse.jetty.server.Server" jetty-9.4.z-SNAPSHOT
+level="INFO" timestamp="2019-11-03 22:13:36,682Z" category="io.dropwizard.jersey.DropwizardResourceConfig" The following paths were found for the configured resources:
+
+    POST    /api/accounts/create (com.bank.api.AccountAPI)
+    GET     /api/accounts/{id} (com.bank.api.AccountAPI)
+    GET     /api/ping (com.bank.api.AccountAPI)
+    GET     /api/transactions/account (com.bank.api.TransactionAPI)
+    POST    /api/transactions/create (com.bank.api.TransactionAPI)
+    GET     /api/transactions/{id} (com.bank.api.TransactionAPI)
+
+level="INFO" timestamp="2019-11-03 22:13:36,685Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@32091c14{/,null,AVAILABLE}
+level="INFO" timestamp="2019-11-03 22:13:36,692Z" category="io.dropwizard.setup.AdminEnvironment" tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+level="WARN" timestamp="2019-11-03 22:13:36,693Z" category="io.dropwizard.setup.AdminEnvironment" 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+level="INFO" timestamp="2019-11-03 22:13:36,705Z" category="org.eclipse.jetty.server.handler.ContextHandler" Started i.d.j.MutableServletContextHandler@2921a36a{/,null,AVAILABLE}
+level="INFO" timestamp="2019-11-03 22:13:36,738Z" category="org.eclipse.jetty.server.AbstractConnector" Started application@ff23ae7{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+level="INFO" timestamp="2019-11-03 22:13:36,741Z" category="org.eclipse.jetty.server.AbstractConnector" Started admin@423b2b62{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+level="INFO" timestamp="2019-11-03 22:13:36,742Z" category="org.eclipse.jetty.server.Server" Started @3866ms
+level="INFO" timestamp="2019-11-03 22:13:57,551Z" category="com.bank.api.AccountAPI" Request to add a new account with id: 1, name: Hang, balance: 100
+level="INFO" timestamp="2019-11-03 22:13:59,999Z" category="com.bank.api.AccountAPI" Request to add a new account with id: 2, name: Benito, balance: 50
+level="INFO" timestamp="2019-11-03 22:14:01,900Z" category="com.bank.api.TransactionAPI" Request to transfer 50 from accountId: 2 to accountId: 1
+level="INFO" timestamp="2019-11-03 22:14:03,784Z" category="com.bank.api.AccountAPI" Request to get the account with id: 1
+level="INFO" timestamp="2019-11-03 22:14:06,992Z" category="com.bank.api.AccountAPI" Request to get the account with id: 2
+level="INFO" timestamp="2019-11-03 22:14:20,547Z" category="com.bank.api.TransactionAPI" Request to transfer 100 from accountId: 1 to accountId: 2
+level="INFO" timestamp="2019-11-03 22:14:29,162Z" category="com.bank.api.AccountAPI" Request to get the account with id: 2
+level="INFO" timestamp="2019-11-03 22:14:33,270Z" category="com.bank.api.AccountAPI" Request to get the account with id: 1
+level="INFO" timestamp="2019-11-03 22:14:45,421Z" category="com.bank.api.AccountAPI" Request to get the account with id: 1
+level="INFO" timestamp="2019-11-03 22:15:21,284Z" category="com.bank.api.TransactionAPI" Request to get all the transactions related to an account with id: 1
